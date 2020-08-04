@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Starting and running a research project | A Guide to Reproducible Research for Surgeons</title>
+  <meta name="description" content="Chapter 2 Starting and running a research project | A Guide to Reproducible Research for Surgeons" />
+  <meta name="generator" content="bookdown 0.20.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Starting and running a research project | A Guide to Reproducible Research for Surgeons" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://surgery.rnsh.org/" />
+  <meta property="og:image" content="https://surgery.rnsh.org/images/cover.png" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Starting and running a research project | A Guide to Reproducible Research for Surgeons" />
+  
+  
+  <meta name="twitter:image" content="https://surgery.rnsh.org/images/cover.png" />
+
+<meta name="author" content="Dr Julian Quinn, The SERT Institute, RNSH Sydney" />
+
+
+<meta name="date" content="2020-08-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="statistical-issues-in-research.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99618359-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://surgery.rnsh.org/research-guide/_book/index.html">A Guide to Reproducible Research for Surgeons</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html"><i class="fa fa-check"></i><b>2</b> Starting and running a research project</a><ul>
+<li class="chapter" data-level="2.1" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#designing-research-projects."><i class="fa fa-check"></i><b>2.1</b> Designing research projects.</a></li>
+<li class="chapter" data-level="2.2" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#framing-a-really-good-research-question."><i class="fa fa-check"></i><b>2.2</b> Framing a really good research question.</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#a-research-question-needs-precision-but-not-too-much"><i class="fa fa-check"></i><b>2.2.1</b> A research Question needs precision (but not too much)</a></li>
+<li class="chapter" data-level="2.2.2" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#a-research-question-should-not-be-too-long"><i class="fa fa-check"></i><b>2.2.2</b> A research Question should not be too long</a></li>
+<li class="chapter" data-level="2.2.3" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#a-research-question-should-not-be-too-vague-or-overarching"><i class="fa fa-check"></i><b>2.2.3</b> A research Question should not be too vague or overarching</a></li>
+<li class="chapter" data-level="2.2.4" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#a-research-question-is-usually-quite-different-to-a-seminar-title"><i class="fa fa-check"></i><b>2.2.4</b> A research Question is usually quite different to a seminar title</a></li>
+<li class="chapter" data-level="2.2.5" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#a-research-question-should-not-be-too-parochial-or-small"><i class="fa fa-check"></i><b>2.2.5</b> A research question should not be too parochial or small</a></li>
+<li class="chapter" data-level="2.2.6" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#finding-causes-do-not-to-be-tempted"><i class="fa fa-check"></i><b>2.2.6</b> Finding causes – do not to be tempted</a></li>
+<li class="chapter" data-level="2.2.7" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#questions-point-to-the-research-aims"><i class="fa fa-check"></i><b>2.2.7</b> Questions point to the research aims</a></li>
+<li class="chapter" data-level="2.2.8" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#and-lastly"><i class="fa fa-check"></i><b>2.2.8</b> And lastly</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#writing-a-short-research-proposal"><i class="fa fa-check"></i><b>2.3</b> Writing a short research proposal</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#decide-what-the-proposal-is-about-and-distill-it-into-a-short-title"><i class="fa fa-check"></i><b>2.3.1</b> Decide what the proposal is about and distill it into a short title</a></li>
+<li class="chapter" data-level="2.3.2" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#be-mindful-of-who-will-review-it"><i class="fa fa-check"></i><b>2.3.2</b> Be mindful of who will review it**</a></li>
+<li class="chapter" data-level="2.3.3" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#if-it-is-short-it-must-be-highly-structured"><i class="fa fa-check"></i><b>2.3.3</b> If it is short it must be highly structured</a></li>
+<li class="chapter" data-level="2.3.4" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#proposal-overall-structure"><i class="fa fa-check"></i><b>2.3.4</b> Proposal overall structure</a></li>
+<li class="chapter" data-level="2.3.5" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#use-diagrams-flow-charts-and-illustrative-images-where-possible"><i class="fa fa-check"></i><b>2.3.5</b> Use diagrams, flow charts and illustrative images where possible</a></li>
+<li class="chapter" data-level="2.3.6" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#textual-flow"><i class="fa fa-check"></i><b>2.3.6</b> Textual flow</a></li>
+<li class="chapter" data-level="2.3.7" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#writing-a-short-document-is-hard"><i class="fa fa-check"></i><b>2.3.7</b> Writing a short document is hard</a></li>
+<li class="chapter" data-level="2.3.8" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#if-there-are-project-submission-guidelines-read-them-carefully-and-adhere-to-them."><i class="fa fa-check"></i><b>2.3.8</b> If there are project submission guidelines, read them carefully and adhere to them.</a></li>
+<li class="chapter" data-level="2.3.9" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#the-first-section-or-page-is-the-most-important"><i class="fa fa-check"></i><b>2.3.9</b> The first section or page is the most important</a></li>
+<li class="chapter" data-level="2.3.10" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#dont-be-boring"><i class="fa fa-check"></i><b>2.3.10</b> Don’t be boring</a></li>
+<li class="chapter" data-level="2.3.11" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#dont-be-repetitive"><i class="fa fa-check"></i><b>2.3.11</b> Don’t be repetitive</a></li>
+<li class="chapter" data-level="2.3.12" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#get-someone-to-read-your-proposal-critically"><i class="fa fa-check"></i><b>2.3.12</b> Get someone to read your proposal critically</a></li>
+<li class="chapter" data-level="2.3.13" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#do-not-be-precious-about-your-work-when-receiving-criticism."><i class="fa fa-check"></i><b>2.3.13</b> Do not be precious about your work when receiving criticism.</a></li>
+<li class="chapter" data-level="2.3.14" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#make-the-expected-outcomesconclusions-look-different-to-the-aims."><i class="fa fa-check"></i><b>2.3.14</b> Make the expected outcomes/conclusions look different to the aims.</a></li>
+<li class="chapter" data-level="2.3.15" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#does-the-whole-proposal-look-simple"><i class="fa fa-check"></i><b>2.3.15</b> Does the whole proposal look simple?</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#reviewing-progress-of-a-research-project"><i class="fa fa-check"></i><b>2.4</b> Reviewing progress of a research project</a></li>
+<li class="chapter" data-level="2.5" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#choosing-a-research-supervisor"><i class="fa fa-check"></i><b>2.5</b> Choosing a research supervisor</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#supervisors-for-degree-subjects-undergo-university-accreditation"><i class="fa fa-check"></i><b>2.5.1</b> Supervisors for degree subjects undergo University accreditation</a></li>
+<li class="chapter" data-level="2.5.2" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#supervisors-may-come-in-multiples"><i class="fa fa-check"></i><b>2.5.2</b> Supervisors may come in multiples</a></li>
+<li class="chapter" data-level="2.5.3" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#dont-choose-a-very-busy-person-as-a-sole-supervisor"><i class="fa fa-check"></i><b>2.5.3</b> Don’t choose a very busy person as a sole supervisor</a></li>
+<li class="chapter" data-level="2.5.4" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#clarify-how-the-project-deadlines-suit-the-supervisor"><i class="fa fa-check"></i><b>2.5.4</b> Clarify how the project deadlines suit the supervisor</a></li>
+<li class="chapter" data-level="2.5.5" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#be-clear-that-the-supervisor-has-expertise-in-all-the-areas-of-the-project"><i class="fa fa-check"></i><b>2.5.5</b> Be clear that the supervisor has expertise in all the areas of the project</a></li>
+<li class="chapter" data-level="2.5.6" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#work-on-the-project-aims-and-research-questions-with-the-supervisor"><i class="fa fa-check"></i><b>2.5.6</b> Work on the project aims and research questions with the supervisor</a></li>
+<li class="chapter" data-level="2.5.7" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#make-sure-the-project-is-feasible-and-actively-explore-how-to-ensure-this-with-the-supervisor"><i class="fa fa-check"></i><b>2.5.7</b> Make sure the project is feasible, and actively explore how to ensure this with the supervisor</a></li>
+<li class="chapter" data-level="2.5.8" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#make-sure-the-project-has-at-least-some-work-where-results-are-guaranteed-in-the-short-term"><i class="fa fa-check"></i><b>2.5.8</b> Make sure the project has at least some work where results are guaranteed in the short term</a></li>
+<li class="chapter" data-level="2.5.9" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#if-things-are-not-working-out"><i class="fa fa-check"></i><b>2.5.9</b> If things are not working out</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#human-research-ethics-principles-a-brief-introduction."><i class="fa fa-check"></i><b>2.6</b> Human research ethics principles – a brief introduction.</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#why"><i class="fa fa-check"></i><b>2.6.1</b> Why?</a></li>
+<li class="chapter" data-level="2.6.2" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#human-participation-in-research"><i class="fa fa-check"></i><b>2.6.2</b> Human participation in research</a></li>
+<li class="chapter" data-level="2.6.3" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#basic-principles"><i class="fa fa-check"></i><b>2.6.3</b> Basic principles</a></li>
+<li class="chapter" data-level="2.6.4" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#harm-and-risk-of-harm"><i class="fa fa-check"></i><b>2.6.4</b> Harm and risk of harm</a></li>
+<li class="chapter" data-level="2.6.5" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#the-role-of-the-hrec"><i class="fa fa-check"></i><b>2.6.5</b> The role of the HREC</a></li>
+<li class="chapter" data-level="2.6.6" data-path="starting-and-running-a-research-project.html"><a href="starting-and-running-a-research-project.html#negligible-and-low-risk-projects"><i class="fa fa-check"></i><b>2.6.6</b> Negligible and low risk projects</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html"><i class="fa fa-check"></i><b>3</b> Statistical issues in research</a><ul>
+<li class="chapter" data-level="3.1" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#statistical-analysis-of-data-a-random-sample-of-thoughts"><i class="fa fa-check"></i><b>3.1</b> Statistical analysis of data – a random sample of thoughts</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#statistical-thinking-needs-to-be-done-before-the-study-begins"><i class="fa fa-check"></i><b>3.1.1</b> Statistical thinking needs to be done before the study begins</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#what-is-your-level-of-statistical-training"><i class="fa fa-check"></i>What is your level of statistical training?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#statistical-significance-does-not-always-mean-medical-significance"><i class="fa fa-check"></i>Statistical significance does not always mean medical significance</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#confidence-in-significant-differences"><i class="fa fa-check"></i>Confidence in significant differences</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#so-a-statistically-significant-result-proves-an-effect-exists"><i class="fa fa-check"></i>So a statistically significant result proves an effect exists?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#with-great-power-comes-great-reproducibility"><i class="fa fa-check"></i>With great power comes great reproducibility</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#the-hidden-horrors-of-multiple-testing"><i class="fa fa-check"></i>The hidden horrors of multiple testing</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#torturing-the-data-till-it-confesses-what-you-want"><i class="fa fa-check"></i>Torturing the data till it confesses what you want</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#but-is-it-normal"><i class="fa fa-check"></i>But is it normal?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#statistics-not-the-only-way."><i class="fa fa-check"></i>Statistics: not the only way.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#power-calculations-and-why-they-are-needed"><i class="fa fa-check"></i><b>3.2</b> Power calculations and why they are needed</a><ul>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#a-hypothetical-clinical-trial"><i class="fa fa-check"></i>A hypothetical clinical trial</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#the-importance-of-being-significant"><i class="fa fa-check"></i>The importance of being significant</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#power-and-what-it-means"><i class="fa fa-check"></i>Power and what it means</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#how-to-estimate-study-power"><i class="fa fa-check"></i>How to estimate study power</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#the-need-for-prior-data"><i class="fa fa-check"></i>The need for prior data</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#significance-thresholds-and-the-pain-they-cause"><i class="fa fa-check"></i>Significance thresholds and the pain they cause</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#other-types-of-studies"><i class="fa fa-check"></i>Other types of studies</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#systematic-reviews-a-short-general-introduction"><i class="fa fa-check"></i><b>3.3</b> Systematic Reviews – A Short General Introduction</a><ul>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#unsystematic-reviews"><i class="fa fa-check"></i>Unsystematic reviews</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#what-are-they-for"><i class="fa fa-check"></i>What are they for?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#what-is-systematic-about-it"><i class="fa fa-check"></i>What is systematic about it?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#how-is-a-systematic-review-performed"><i class="fa fa-check"></i>How is a systematic review performed?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#what-is-done-with-this-information"><i class="fa fa-check"></i>What is done with this information?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#is-all-that-effort-really-needed"><i class="fa fa-check"></i>Is all that effort really needed?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#what-types-of-studies-are-included-in-the-systematic-review"><i class="fa fa-check"></i>What types of studies are included in the systematic review?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#what-about-meta-analyses"><i class="fa fa-check"></i>What about meta-analyses?</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#how-are-the-biases-and-other-flaws-in-studies-assessed"><i class="fa fa-check"></i>How are the biases and other flaws in studies assessed?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#regression-to-the-mean-a-bewildering-effect-of-random-variation."><i class="fa fa-check"></i><b>3.4</b> Regression to the mean – a bewildering effect of random variation.</a><ul>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#terrible-darts-players"><i class="fa fa-check"></i>Terrible darts players</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#punishment-reward-and-intolerant-teachers"><i class="fa fa-check"></i>Punishment, reward and intolerant teachers</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#invisible-randomness"><i class="fa fa-check"></i>Invisible randomness</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#an-aside-francis-galton"><i class="fa fa-check"></i>An aside: Francis Galton</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#influences-on-clinical-trial-design"><i class="fa fa-check"></i>Influences on clinical trial design</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#what-to-do"><i class="fa fa-check"></i>What to do</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#further-entertainment"><i class="fa fa-check"></i>Further entertainment</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#making-multiple-comparisons-and-anova-testing"><i class="fa fa-check"></i><b>3.5</b> Making multiple comparisons and ANOVA testing</a><ul>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#making-single-comparisons"><i class="fa fa-check"></i>Making single comparisons</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#p-values"><i class="fa fa-check"></i>P-values</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#multiple-tests-can-spoil-everything"><i class="fa fa-check"></i>Multiple tests can spoil everything</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#ronald-fishers-potatoes"><i class="fa fa-check"></i>Ronald Fisher’s potatoes</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#threshold-correction"><i class="fa fa-check"></i>Threshold correction</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#way-and-2-way-anova"><i class="fa fa-check"></i>1-way and 2-way ANOVA</a></li>
+<li class="chapter" data-level="" data-path="statistical-issues-in-research.html"><a href="statistical-issues-in-research.html#not-using-anova"><i class="fa fa-check"></i>Not using ANOVA</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="research-gone-bad.html"><a href="research-gone-bad.html"><i class="fa fa-check"></i><b>4</b> Research gone bad</a><ul>
+<li class="chapter" data-level="4.1" data-path="research-gone-bad.html"><a href="research-gone-bad.html#research-integrity"><i class="fa fa-check"></i><b>4.1</b> Research integrity</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="research-gone-bad.html"><a href="research-gone-bad.html#the-importance-of-not-making-things-up"><i class="fa fa-check"></i><b>4.1.1</b> The importance of not making things up</a></li>
+<li class="chapter" data-level="4.1.2" data-path="research-gone-bad.html"><a href="research-gone-bad.html#the-importance-of-not-making-things-up-even-a-little-bit"><i class="fa fa-check"></i><b>4.1.2</b> The importance of not making things up even a little bit</a></li>
+<li class="chapter" data-level="4.1.3" data-path="research-gone-bad.html"><a href="research-gone-bad.html#what-if-it-is-someone-else"><i class="fa fa-check"></i><b>4.1.3</b> What if it is someone else?</a></li>
+<li class="chapter" data-level="4.1.4" data-path="research-gone-bad.html"><a href="research-gone-bad.html#human-research-ethics-committees"><i class="fa fa-check"></i><b>4.1.4</b> Human research ethics committees</a></li>
+<li class="chapter" data-level="4.1.5" data-path="research-gone-bad.html"><a href="research-gone-bad.html#study-design"><i class="fa fa-check"></i><b>4.1.5</b> Study design</a></li>
+<li class="chapter" data-level="4.1.6" data-path="research-gone-bad.html"><a href="research-gone-bad.html#conflicts-of-interest"><i class="fa fa-check"></i><b>4.1.6</b> Conflicts of interest</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="research-gone-bad.html"><a href="research-gone-bad.html#narratives-necessary-but-dangerous."><i class="fa fa-check"></i><b>4.2</b> Narratives : necessary but dangerous.</a></li>
+<li class="chapter" data-level="4.3" data-path="research-gone-bad.html"><a href="research-gone-bad.html#psychological-biases-in-scientific-research"><i class="fa fa-check"></i><b>4.3</b> Psychological biases in scientific research</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="research-gone-bad.html"><a href="research-gone-bad.html#confirmation-bias"><i class="fa fa-check"></i><b>4.3.1</b> Confirmation bias</a></li>
+<li class="chapter" data-level="4.3.2" data-path="research-gone-bad.html"><a href="research-gone-bad.html#hindsight-bias-or-outcome-bias"><i class="fa fa-check"></i><b>4.3.2</b> Hindsight bias or outcome bias</a></li>
+<li class="chapter" data-level="4.3.3" data-path="research-gone-bad.html"><a href="research-gone-bad.html#the-availability-heuristic"><i class="fa fa-check"></i><b>4.3.3</b> The availability heuristic</a></li>
+<li class="chapter" data-level="4.3.4" data-path="research-gone-bad.html"><a href="research-gone-bad.html#survivorship-bias"><i class="fa fa-check"></i><b>4.3.4</b> Survivorship bias</a></li>
+<li class="chapter" data-level="4.3.5" data-path="research-gone-bad.html"><a href="research-gone-bad.html#overconfidence-bias"><i class="fa fa-check"></i><b>4.3.5</b> Overconfidence bias</a></li>
+<li class="chapter" data-level="4.3.6" data-path="research-gone-bad.html"><a href="research-gone-bad.html#the-dunning-kruger-effect"><i class="fa fa-check"></i><b>4.3.6</b> The Dunning-Kruger effect</a></li>
+<li class="chapter" data-level="4.3.7" data-path="research-gone-bad.html"><a href="research-gone-bad.html#narrative-bias"><i class="fa fa-check"></i><b>4.3.7</b> Narrative bias</a></li>
+<li class="chapter" data-level="4.3.8" data-path="research-gone-bad.html"><a href="research-gone-bad.html#the-ostrich-effect"><i class="fa fa-check"></i><b>4.3.8</b> The ostrich effect</a></li>
+<li class="chapter" data-level="4.3.9" data-path="research-gone-bad.html"><a href="research-gone-bad.html#selective-perception"><i class="fa fa-check"></i><b>4.3.9</b> Selective perception</a></li>
+<li class="chapter" data-level="4.3.10" data-path="research-gone-bad.html"><a href="research-gone-bad.html#zero-risk-bias"><i class="fa fa-check"></i><b>4.3.10</b> Zero risk bias</a></li>
+<li class="chapter" data-level="4.3.11" data-path="research-gone-bad.html"><a href="research-gone-bad.html#pro-innovation-bias"><i class="fa fa-check"></i><b>4.3.11</b> Pro-innovation bias</a></li>
+<li class="chapter" data-level="4.3.12" data-path="research-gone-bad.html"><a href="research-gone-bad.html#anchoring-bias"><i class="fa fa-check"></i><b>4.3.12</b> Anchoring bias</a></li>
+<li class="chapter" data-level="4.3.13" data-path="research-gone-bad.html"><a href="research-gone-bad.html#clustering-illusion"><i class="fa fa-check"></i><b>4.3.13</b> Clustering illusion</a></li>
+<li class="chapter" data-level="4.3.14" data-path="research-gone-bad.html"><a href="research-gone-bad.html#choice-support-bias"><i class="fa fa-check"></i><b>4.3.14</b> Choice support bias</a></li>
+<li class="chapter" data-level="4.3.15" data-path="research-gone-bad.html"><a href="research-gone-bad.html#recency-bias"><i class="fa fa-check"></i><b>4.3.15</b> Recency bias</a></li>
+<li class="chapter" data-level="4.3.16" data-path="research-gone-bad.html"><a href="research-gone-bad.html#bandwagon-effect"><i class="fa fa-check"></i><b>4.3.16</b> Bandwagon effect</a></li>
+<li class="chapter" data-level="4.3.17" data-path="research-gone-bad.html"><a href="research-gone-bad.html#blind-spot-bias-or-cognitive-bias-bias"><i class="fa fa-check"></i><b>4.3.17</b> Blind spot bias, or cognitive bias bias</a></li>
+<li class="chapter" data-level="4.3.18" data-path="research-gone-bad.html"><a href="research-gone-bad.html#research-and-the-scientific-method"><i class="fa fa-check"></i><b>4.3.18</b> Research and the scientific method</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="research-gone-bad.html"><a href="research-gone-bad.html#the-replication-crisis-in-medical-research"><i class="fa fa-check"></i><b>4.4</b> The replication crisis in medical research</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="research-gone-bad.html"><a href="research-gone-bad.html#what-studies-can-be-trusted-to-form-a-basis-of-new-work"><i class="fa fa-check"></i><b>4.4.1</b> What studies can be trusted to form a basis of new work?</a></li>
+<li class="chapter" data-level="4.4.2" data-path="research-gone-bad.html"><a href="research-gone-bad.html#what-about-peer-review-are-reviewers-no-good"><i class="fa fa-check"></i><b>4.4.2</b> What about peer review? Are reviewers no good?</a></li>
+<li class="chapter" data-level="4.4.3" data-path="research-gone-bad.html"><a href="research-gone-bad.html#why-is-this-happening"><i class="fa fa-check"></i><b>4.4.3</b> Why is this happening?</a></li>
+<li class="chapter" data-level="4.4.4" data-path="research-gone-bad.html"><a href="research-gone-bad.html#what-can-be-done-to-avoid-this-type-of-trouble"><i class="fa fa-check"></i><b>4.4.4</b> What can be done to avoid this type of trouble?</a></li>
+<li class="chapter" data-level="4.4.5" data-path="research-gone-bad.html"><a href="research-gone-bad.html#is-there-no-hope"><i class="fa fa-check"></i><b>4.4.5</b> Is there no hope?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="research-gone-bad.html"><a href="research-gone-bad.html#survivorship-bias-1"><i class="fa fa-check"></i><b>4.5</b> Survivorship bias</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="research-gone-bad.html"><a href="research-gone-bad.html#what-exactly-is-this-bias"><i class="fa fa-check"></i><b>4.5.1</b> What exactly is this bias?</a></li>
+<li class="chapter" data-level="4.5.2" data-path="research-gone-bad.html"><a href="research-gone-bad.html#so-what-examples-might-help"><i class="fa fa-check"></i><b>4.5.2</b> So what examples might help?</a></li>
+<li class="chapter" data-level="4.5.3" data-path="research-gone-bad.html"><a href="research-gone-bad.html#where-does-this-bias-crop-up-in-clinical-research"><i class="fa fa-check"></i><b>4.5.3</b> Where does this bias crop up in clinical research?</a></li>
+<li class="chapter" data-level="4.5.4" data-path="research-gone-bad.html"><a href="research-gone-bad.html#how-can-a-researcher-minimise-or-avoid-this-bias"><i class="fa fa-check"></i><b>4.5.4</b> How can a researcher minimise or avoid this bias?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="research-gone-bad.html"><a href="research-gone-bad.html#parkinsons-laws-and-related-project-planning-pitfalls-for-researchers"><i class="fa fa-check"></i><b>4.6</b> Parkinson’s Laws and related project planning pitfalls for researchers</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="research-gone-bad.html"><a href="research-gone-bad.html#parkinsons-law"><i class="fa fa-check"></i><b>4.6.1</b> Parkinson’s Law</a></li>
+<li class="chapter" data-level="4.6.2" data-path="research-gone-bad.html"><a href="research-gone-bad.html#fredkins-paradox-and-buridans-ass-or-buridans-principle"><i class="fa fa-check"></i><b>4.6.2</b> Fredkins paradox and Buridan’s Ass (or Buridans principle)</a></li>
+<li class="chapter" data-level="4.6.3" data-path="research-gone-bad.html"><a href="research-gone-bad.html#bikeshedding"><i class="fa fa-check"></i><b>4.6.3</b> Bikeshedding</a></li>
+<li class="chapter" data-level="4.6.4" data-path="research-gone-bad.html"><a href="research-gone-bad.html#hofstadters-law"><i class="fa fa-check"></i><b>4.6.4</b> Hofstadter’s Law</a></li>
+<li class="chapter" data-level="4.6.5" data-path="research-gone-bad.html"><a href="research-gone-bad.html#procrastination"><i class="fa fa-check"></i><b>4.6.5</b> Procrastination</a></li>
+<li class="chapter" data-level="4.6.6" data-path="research-gone-bad.html"><a href="research-gone-bad.html#unexpected-developments-and-mission-creep"><i class="fa fa-check"></i><b>4.6.6</b> Unexpected developments and mission creep</a></li>
+<li class="chapter" data-level="4.6.7" data-path="research-gone-bad.html"><a href="research-gone-bad.html#unclear-responsibility-or-accountability"><i class="fa fa-check"></i><b>4.6.7</b> Unclear responsibility or accountability</a></li>
+<li class="chapter" data-level="4.6.8" data-path="research-gone-bad.html"><a href="research-gone-bad.html#soft-deadlines"><i class="fa fa-check"></i><b>4.6.8</b> Soft deadlines</a></li>
+<li class="chapter" data-level="4.6.9" data-path="research-gone-bad.html"><a href="research-gone-bad.html#communication"><i class="fa fa-check"></i><b>4.6.9</b> Communication</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html"><i class="fa fa-check"></i><b>5</b> Presentations at conferences</a><ul>
+<li class="chapter" data-level="5.1" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#poster-presentations"><i class="fa fa-check"></i><b>5.1</b> Poster presentations</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#poster-or-presentation-abstracts"><i class="fa fa-check"></i><b>5.1.1</b> Poster (or presentation) abstracts</a></li>
+<li class="chapter" data-level="5.1.2" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#the-three-main-types-of-poster-viewers"><i class="fa fa-check"></i><b>5.1.2</b> The three main types of poster viewers</a></li>
+<li class="chapter" data-level="5.1.3" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#poster-titles"><i class="fa fa-check"></i><b>5.1.3</b> Poster titles</a></li>
+<li class="chapter" data-level="5.1.4" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#poster-summary"><i class="fa fa-check"></i><b>5.1.4</b> Poster summary</a></li>
+<li class="chapter" data-level="5.1.5" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#poster-introduction"><i class="fa fa-check"></i><b>5.1.5</b> Poster introduction</a></li>
+<li class="chapter" data-level="5.1.6" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#materials-and-methods"><i class="fa fa-check"></i><b>5.1.6</b> Materials and methods</a></li>
+<li class="chapter" data-level="5.1.7" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#data-and-analysis"><i class="fa fa-check"></i><b>5.1.7</b> Data and analysis</a></li>
+<li class="chapter" data-level="5.1.8" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#conclusions-and-summary-of-results"><i class="fa fa-check"></i><b>5.1.8</b> Conclusions and summary of results</a></li>
+<li class="chapter" data-level="5.1.9" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#references"><i class="fa fa-check"></i><b>5.1.9</b> References</a></li>
+<li class="chapter" data-level="5.1.10" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#poster-structure"><i class="fa fa-check"></i><b>5.1.10</b> Poster structure</a></li>
+<li class="chapter" data-level="5.1.11" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#discussing-the-poster"><i class="fa fa-check"></i><b>5.1.11</b> Discussing the poster</a></li>
+<li class="chapter" data-level="5.1.12" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#conference-etiquette"><i class="fa fa-check"></i><b>5.1.12</b> Conference etiquette</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#conference-oral-presentations"><i class="fa fa-check"></i><b>5.2</b> Conference oral presentations</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#general-principles"><i class="fa fa-check"></i><b>5.2.1</b> General principles</a></li>
+<li class="chapter" data-level="5.2.2" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#title-slide"><i class="fa fa-check"></i><b>5.2.2</b> Title slide</a></li>
+<li class="chapter" data-level="5.2.3" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#the-first-sentence"><i class="fa fa-check"></i><b>5.2.3</b> The first sentence</a></li>
+<li class="chapter" data-level="5.2.4" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#introduce-the-work"><i class="fa fa-check"></i><b>5.2.4</b> Introduce the work</a></li>
+<li class="chapter" data-level="5.2.5" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#speak-very-slowly"><i class="fa fa-check"></i><b>5.2.5</b> Speak … very … slowly</a></li>
+<li class="chapter" data-level="5.2.6" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#laser-pointers-and-presentation-equipment"><i class="fa fa-check"></i><b>5.2.6</b> Laser pointers and presentation equipment</a></li>
+<li class="chapter" data-level="5.2.7" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#slide-qualities"><i class="fa fa-check"></i><b>5.2.7</b> Slide qualities</a></li>
+<li class="chapter" data-level="5.2.8" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#graphs"><i class="fa fa-check"></i><b>5.2.8</b> Graphs</a></li>
+<li class="chapter" data-level="5.2.9" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#summaries-and-conclusions"><i class="fa fa-check"></i><b>5.2.9</b> Summaries and conclusions</a></li>
+<li class="chapter" data-level="5.2.10" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#acknowledgements-slide"><i class="fa fa-check"></i><b>5.2.10</b> Acknowledgements slide</a></li>
+<li class="chapter" data-level="5.2.11" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#practice"><i class="fa fa-check"></i><b>5.2.11</b> Practice</a></li>
+<li class="chapter" data-level="5.2.12" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#questions"><i class="fa fa-check"></i><b>5.2.12</b> Questions</a></li>
+<li class="chapter" data-level="5.2.13" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#fear-and-stage-fright"><i class="fa fa-check"></i><b>5.2.13</b> Fear and stage fright</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#giving-presentations-and-lectures-general-considerations"><i class="fa fa-check"></i><b>5.3</b> Giving presentations and lectures – general considerations</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#you"><i class="fa fa-check"></i><b>5.3.1</b> You</a></li>
+<li class="chapter" data-level="5.3.2" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#practice-and-the-surprising-difference-between-the-written-and-spoken-word"><i class="fa fa-check"></i><b>5.3.2</b> Practice, and the surprising difference between the written and spoken word</a></li>
+<li class="chapter" data-level="5.3.3" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#slide-clarity"><i class="fa fa-check"></i><b>5.3.3</b> Slide clarity</a></li>
+<li class="chapter" data-level="5.3.4" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#ask-other-people"><i class="fa fa-check"></i><b>5.3.4</b> Ask other people</a></li>
+<li class="chapter" data-level="5.3.5" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#the-audience"><i class="fa fa-check"></i><b>5.3.5</b> The audience</a></li>
+<li class="chapter" data-level="5.3.6" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#get-your-opening-lines-right."><i class="fa fa-check"></i><b>5.3.6</b> Get your opening lines right.</a></li>
+<li class="chapter" data-level="5.3.7" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#explaining-things"><i class="fa fa-check"></i><b>5.3.7</b> Explaining things</a></li>
+<li class="chapter" data-level="5.3.8" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#say-three-things."><i class="fa fa-check"></i><b>5.3.8</b> Say three things.</a></li>
+<li class="chapter" data-level="5.3.9" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#notes"><i class="fa fa-check"></i><b>5.3.9</b> Notes</a></li>
+<li class="chapter" data-level="5.3.10" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#using-quotes-and-epithets"><i class="fa fa-check"></i><b>5.3.10</b> Using quotes and epithets</a></li>
+<li class="chapter" data-level="5.3.11" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#be-merciful-to-your-audience"><i class="fa fa-check"></i><b>5.3.11</b> Be merciful to your audience</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#preparing-slides-for-an-oral-presentation"><i class="fa fa-check"></i><b>5.4</b> Preparing slides for an oral presentation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#avoid-clutter"><i class="fa fa-check"></i><b>5.4.1</b> Avoid clutter</a></li>
+<li class="chapter" data-level="5.4.2" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#dont-use-big-blocks-of-text"><i class="fa fa-check"></i><b>5.4.2</b> Don’t use big blocks of text</a></li>
+<li class="chapter" data-level="5.4.3" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#text-size-should-be-large-and-bold-font"><i class="fa fa-check"></i><b>5.4.3</b> Text size should be large and bold font</a></li>
+<li class="chapter" data-level="5.4.4" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#make-the-presentation-highly-structured"><i class="fa fa-check"></i><b>5.4.4</b> Make the presentation highly structured</a></li>
+<li class="chapter" data-level="5.4.5" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#dont-try-to-make-a-lot-of-points"><i class="fa fa-check"></i><b>5.4.5</b> Don’t try to make a lot of points</a></li>
+<li class="chapter" data-level="5.4.6" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#be-careful-with-data-tables"><i class="fa fa-check"></i><b>5.4.6</b> Be careful with data tables</a></li>
+<li class="chapter" data-level="5.4.7" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#be-even-more-careful-with-graphs"><i class="fa fa-check"></i><b>5.4.7</b> Be even more careful with graphs</a></li>
+<li class="chapter" data-level="5.4.8" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#avoid-excessive-referencing"><i class="fa fa-check"></i><b>5.4.8</b> Avoid excessive referencing</a></li>
+<li class="chapter" data-level="5.4.9" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#use-pictures-and-images-where-possible."><i class="fa fa-check"></i><b>5.4.9</b> Use pictures and images where possible.</a></li>
+<li class="chapter" data-level="5.4.10" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#length-of-talk"><i class="fa fa-check"></i><b>5.4.10</b> Length of talk</a></li>
+<li class="chapter" data-level="5.4.11" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#use-colour-carefully"><i class="fa fa-check"></i><b>5.4.11</b> Use colour carefully</a></li>
+<li class="chapter" data-level="5.4.12" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#check-grammar-and-spelling"><i class="fa fa-check"></i><b>5.4.12</b> Check grammar and spelling</a></li>
+<li class="chapter" data-level="5.4.13" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#dont-put-in-too-many-slides"><i class="fa fa-check"></i><b>5.4.13</b> Don’t put in too many slides</a></li>
+<li class="chapter" data-level="5.4.14" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#practice-the-talk"><i class="fa fa-check"></i><b>5.4.14</b> Practice the talk</a></li>
+<li class="chapter" data-level="5.4.15" data-path="presentations-at-conferences.html"><a href="presentations-at-conferences.html#show-your-slides-to-someone-else"><i class="fa fa-check"></i><b>5.4.15</b> Show your slides to someone else</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html"><i class="fa fa-check"></i><b>6</b> Publishing manuscripts</a><ul>
+<li class="chapter" data-level="6.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#writing-skills-for-manuscripts"><i class="fa fa-check"></i><b>6.1</b> Writing skills for manuscripts</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#styles-of-writing-used-in-a-manuscript"><i class="fa fa-check"></i><b>6.1.1</b> Styles of writing used in a manuscript</a></li>
+<li class="chapter" data-level="6.1.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#starting-manuscript-development"><i class="fa fa-check"></i><b>6.1.2</b> Starting manuscript development</a></li>
+<li class="chapter" data-level="6.1.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-story"><i class="fa fa-check"></i><b>6.1.3</b> The story</a></li>
+<li class="chapter" data-level="6.1.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#clarity"><i class="fa fa-check"></i><b>6.1.4</b> Clarity</a></li>
+<li class="chapter" data-level="6.1.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#more-about-clarity"><i class="fa fa-check"></i><b>6.1.5</b> More about clarity</a></li>
+<li class="chapter" data-level="6.1.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#data"><i class="fa fa-check"></i><b>6.1.6</b> Data</a></li>
+<li class="chapter" data-level="6.1.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#repetition"><i class="fa fa-check"></i><b>6.1.7</b> Repetition</a></li>
+<li class="chapter" data-level="6.1.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#be-mindful-of-who-will-review-it-1"><i class="fa fa-check"></i><b>6.1.8</b> Be mindful of who will review it</a></li>
+<li class="chapter" data-level="6.1.9" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#publication-and-manuscript-submission"><i class="fa fa-check"></i><b>6.1.9</b> Publication and manuscript submission</a></li>
+<li class="chapter" data-level="6.1.10" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-pat-on-the-back"><i class="fa fa-check"></i><b>6.1.10</b> The pat on the back</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#manuscript-publication-and-authorships"><i class="fa fa-check"></i><b>6.2</b> Manuscript publication and authorships</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#authorship"><i class="fa fa-check"></i><b>6.2.1</b> Authorship</a></li>
+<li class="chapter" data-level="6.2.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#author-list"><i class="fa fa-check"></i><b>6.2.2</b> Author list</a></li>
+<li class="chapter" data-level="6.2.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#manuscript-structure"><i class="fa fa-check"></i><b>6.2.3</b> Manuscript structure</a></li>
+<li class="chapter" data-level="6.2.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#developing-the-manuscript"><i class="fa fa-check"></i><b>6.2.4</b> Developing the manuscript</a></li>
+<li class="chapter" data-level="6.2.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#writing"><i class="fa fa-check"></i><b>6.2.5</b> Writing</a></li>
+<li class="chapter" data-level="6.2.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#dealing-with-data"><i class="fa fa-check"></i><b>6.2.6</b> Dealing with data</a></li>
+<li class="chapter" data-level="6.2.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#public-access-to-the-published-manuscript"><i class="fa fa-check"></i><b>6.2.7</b> Public access to the published manuscript</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#how-to-collaborate-on-writing-manuscripts."><i class="fa fa-check"></i><b>6.3</b> How to collaborate on writing manuscripts.</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#first-stage-of-manuscript-development-shaping-the-idea-and-getting-the-data"><i class="fa fa-check"></i><b>6.3.1</b> First stage of manuscript development: shaping the idea and getting the data</a></li>
+<li class="chapter" data-level="6.3.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#authorship-status"><i class="fa fa-check"></i><b>6.3.2</b> Authorship status</a></li>
+<li class="chapter" data-level="6.3.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#second-stage-of-manuscript-development-presenting-the-work-and-preparing-figures"><i class="fa fa-check"></i><b>6.3.3</b> Second stage of manuscript development: presenting the work and preparing figures</a></li>
+<li class="chapter" data-level="6.3.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#drafting-a-manuscript"><i class="fa fa-check"></i><b>6.3.4</b> Drafting a manuscript</a></li>
+<li class="chapter" data-level="6.3.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#authorship-etiquette-in-manuscript-writing"><i class="fa fa-check"></i><b>6.3.5</b> Authorship etiquette in manuscript writing</a></li>
+<li class="chapter" data-level="6.3.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#research-ethics-and-collaborators"><i class="fa fa-check"></i><b>6.3.6</b> Research ethics and collaborators</a></li>
+<li class="chapter" data-level="6.3.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#third-stage-of-manuscript-preparation-finalising-the-manuscript"><i class="fa fa-check"></i><b>6.3.7</b> Third stage of manuscript preparation: finalising the manuscript</a></li>
+<li class="chapter" data-level="6.3.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#fourth-stage-of-manuscript-preparation-the-fiddly-bits-at-the-end"><i class="fa fa-check"></i><b>6.3.8</b> Fourth stage of manuscript preparation: the fiddly bits at the end</a></li>
+<li class="chapter" data-level="6.3.9" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-peer-review-process"><i class="fa fa-check"></i><b>6.3.9</b> The peer review process</a></li>
+<li class="chapter" data-level="6.3.10" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#money"><i class="fa fa-check"></i><b>6.3.10</b> Money</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#producing-the-first-draft-of-a-research-manuscript"><i class="fa fa-check"></i><b>6.4</b> Producing the first draft of a research manuscript</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#starting-on-the-blank-page"><i class="fa fa-check"></i><b>6.4.1</b> Starting on the blank page</a></li>
+<li class="chapter" data-level="6.4.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#journal-choice-and-information-on-format"><i class="fa fa-check"></i><b>6.4.2</b> Journal choice and information on format</a></li>
+<li class="chapter" data-level="6.4.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#assembling-the-data"><i class="fa fa-check"></i><b>6.4.3</b> Assembling the data</a></li>
+<li class="chapter" data-level="6.4.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#writing-up-results-and-figures"><i class="fa fa-check"></i><b>6.4.4</b> Writing up Results and Figures</a></li>
+<li class="chapter" data-level="6.4.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#introducing-everything"><i class="fa fa-check"></i><b>6.4.5</b> Introducing everything</a></li>
+<li class="chapter" data-level="6.4.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#methodical-with-methods"><i class="fa fa-check"></i><b>6.4.6</b> Methodical with Methods</a></li>
+<li class="chapter" data-level="6.4.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#discussion-among-friends"><i class="fa fa-check"></i><b>6.4.7</b> Discussion among friends</a></li>
+<li class="chapter" data-level="6.4.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-next-steps-abstract-and-referencing"><i class="fa fa-check"></i><b>6.4.8</b> The next steps: Abstract and referencing</a></li>
+<li class="chapter" data-level="6.4.9" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#end-of-the-first-draft"><i class="fa fa-check"></i><b>6.4.9</b> End of the first draft</a></li>
+<li class="chapter" data-level="6.4.10" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#onwards"><i class="fa fa-check"></i><b>6.4.10</b> Onwards</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#manuscript-citations"><i class="fa fa-check"></i><b>6.5</b> Manuscript citations</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-is-a-citation"><i class="fa fa-check"></i><b>6.5.1</b> What is a citation?</a></li>
+<li class="chapter" data-level="6.5.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#where-are-citations-needed"><i class="fa fa-check"></i><b>6.5.2</b> Where are citations needed?</a></li>
+<li class="chapter" data-level="6.5.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-form-does-a-citation-take"><i class="fa fa-check"></i><b>6.5.3</b> What form does a citation take?</a></li>
+<li class="chapter" data-level="6.5.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#checking-references"><i class="fa fa-check"></i><b>6.5.4</b> Checking references</a></li>
+<li class="chapter" data-level="6.5.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#how-to-find-sources-to-cite"><i class="fa fa-check"></i><b>6.5.5</b> How to find sources to cite</a></li>
+<li class="chapter" data-level="6.5.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#deciding-which-publications-to-cite"><i class="fa fa-check"></i><b>6.5.6</b> Deciding which publications to cite</a></li>
+<li class="chapter" data-level="6.5.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#inserting-citations-into-text"><i class="fa fa-check"></i><b>6.5.7</b> Inserting citations into text</a></li>
+<li class="chapter" data-level="6.5.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#formatting-of-reference-lists"><i class="fa fa-check"></i><b>6.5.8</b> Formatting of reference lists</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#writing-manuscripts-abstracts-one-of-the-hardest-writing-skills"><i class="fa fa-check"></i><b>6.6</b> Writing manuscripts abstracts – one of the hardest writing skills</a><ul>
+<li class="chapter" data-level="6.6.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#starting-out"><i class="fa fa-check"></i><b>6.6.1</b> Starting out</a></li>
+<li class="chapter" data-level="6.6.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#obey-the-abstract-constraints"><i class="fa fa-check"></i><b>6.6.2</b> Obey the abstract constraints</a></li>
+<li class="chapter" data-level="6.6.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#conference-abstracts"><i class="fa fa-check"></i><b>6.6.3</b> Conference abstracts</a></li>
+<li class="chapter" data-level="6.6.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#stage-1-assembling-the-pieces."><i class="fa fa-check"></i><b>6.6.4</b> Stage 1: assembling the pieces.</a></li>
+<li class="chapter" data-level="6.6.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-first-amputations"><i class="fa fa-check"></i><b>6.6.5</b> The first amputations</a></li>
+<li class="chapter" data-level="6.6.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#stage-2-the-cycle-of-text-reduction"><i class="fa fa-check"></i><b>6.6.6</b> Stage 2 – the cycle of text reduction</a></li>
+<li class="chapter" data-level="6.6.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#stage-3-the-unsuspected-cruelty-of-other-people"><i class="fa fa-check"></i><b>6.6.7</b> Stage 3 – the unsuspected cruelty of other people</a></li>
+<li class="chapter" data-level="6.6.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#stage-4-discussing-with-the-co-authors."><i class="fa fa-check"></i><b>6.6.8</b> Stage 4 – discussing with the co-authors.</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#writing-a-manuscript-introduction"><i class="fa fa-check"></i><b>6.7</b> Writing a manuscript introduction</a><ul>
+<li class="chapter" data-level="6.7.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#starting-out-writing-and-thinking"><i class="fa fa-check"></i><b>6.7.1</b> Starting out – writing and thinking</a></li>
+<li class="chapter" data-level="6.7.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-scope-of-the-manuscript"><i class="fa fa-check"></i><b>6.7.2</b> The scope of the manuscript,</a></li>
+<li class="chapter" data-level="6.7.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#style"><i class="fa fa-check"></i><b>6.7.3</b> Style</a></li>
+<li class="chapter" data-level="6.7.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#models"><i class="fa fa-check"></i><b>6.7.4</b> Models</a></li>
+<li class="chapter" data-level="6.7.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#preambling"><i class="fa fa-check"></i><b>6.7.5</b> Preambling</a></li>
+<li class="chapter" data-level="6.7.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#overview-or-background-of-the-subject"><i class="fa fa-check"></i><b>6.7.6</b> Overview or background of the subject</a></li>
+<li class="chapter" data-level="6.7.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#leading-into-the-rest-of-the-manuscript-why-was-the-work-done"><i class="fa fa-check"></i><b>6.7.7</b> Leading into the rest of the manuscript: why was the work done?</a></li>
+<li class="chapter" data-level="6.7.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-ending"><i class="fa fa-check"></i><b>6.7.8</b> The ending</a></li>
+<li class="chapter" data-level="6.7.9" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#introduction-versus-discussion"><i class="fa fa-check"></i><b>6.7.9</b> Introduction versus Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#writing-the-discussion-section-of-a-manuscript."><i class="fa fa-check"></i><b>6.8</b> Writing the Discussion section of a manuscript.</a><ul>
+<li class="chapter" data-level="6.8.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-most-common-mistake"><i class="fa fa-check"></i><b>6.8.1</b> The most common mistake</a></li>
+<li class="chapter" data-level="6.8.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-first-part-of-a-discussion-section"><i class="fa fa-check"></i><b>6.8.2</b> The first part of a Discussion section</a></li>
+<li class="chapter" data-level="6.8.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#after-summarizing-the-results-talk-about-what-they-mean-and-how-good-or-bad-they-are."><i class="fa fa-check"></i><b>6.8.3</b> After summarizing the Results talk about what they mean and how good or bad they are.</a></li>
+<li class="chapter" data-level="6.8.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-discussion-section-should-contain-some-support-for-a-thesis"><i class="fa fa-check"></i><b>6.8.4</b> The Discussion section should contain some support for a thesis</a></li>
+<li class="chapter" data-level="6.8.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#explain-what-should-be-done-to-fix-particular-weaknesses-in-the-paper"><i class="fa fa-check"></i><b>6.8.5</b> Explain what should be done to fix particular weaknesses in the paper</a></li>
+<li class="chapter" data-level="6.8.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#linking-the-work-to-the-wider-literature"><i class="fa fa-check"></i><b>6.8.6</b> Linking the work to the wider literature</a></li>
+<li class="chapter" data-level="6.8.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-conclusion"><i class="fa fa-check"></i><b>6.8.7</b> The Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.9" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#performing-a-journal-peer-review"><i class="fa fa-check"></i><b>6.9</b> Performing a journal peer review</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-is-peer-review-for"><i class="fa fa-check"></i><b>6.9.1</b> What is peer review for?</a></li>
+<li class="chapter" data-level="6.9.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#who-does-peer-reviews"><i class="fa fa-check"></i><b>6.9.2</b> Who does peer reviews?</a></li>
+<li class="chapter" data-level="6.9.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#how-is-a-peer-review-used-by-a-journal"><i class="fa fa-check"></i><b>6.9.3</b> How is a peer review used by a journal?</a></li>
+<li class="chapter" data-level="6.9.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#can-opinions-about-the-manuscript-be-direct-or-is-deference-needed"><i class="fa fa-check"></i><b>6.9.4</b> Can opinions about the manuscript be direct or is deference needed?</a></li>
+<li class="chapter" data-level="6.9.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-happens-if-evidence-and-data-are-incomplete-in-the-manuscript"><i class="fa fa-check"></i><b>6.9.5</b> What happens if evidence and data are incomplete in the manuscript?</a></li>
+<li class="chapter" data-level="6.9.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-is-the-process-of-undertaking-the-review"><i class="fa fa-check"></i><b>6.9.6</b> What is the process of undertaking the review?</a></li>
+<li class="chapter" data-level="6.9.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-about-errors-in-the-text"><i class="fa fa-check"></i><b>6.9.7</b> What about errors in the text?</a></li>
+<li class="chapter" data-level="6.9.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-sort-of-reports-need-to-be-submitted"><i class="fa fa-check"></i><b>6.9.8</b> What sort of reports need to be submitted?</a></li>
+<li class="chapter" data-level="6.9.9" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#how-to-write-the-report"><i class="fa fa-check"></i><b>6.9.9</b> How to write the report?</a></li>
+<li class="chapter" data-level="6.9.10" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#what-happens-next"><i class="fa fa-check"></i><b>6.9.10</b> What happens next?</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#responding-effectively-to-a-manuscript-peer-review"><i class="fa fa-check"></i><b>6.10</b> Responding effectively to a manuscript peer review</a><ul>
+<li class="chapter" data-level="6.10.1" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#opening-the-letter"><i class="fa fa-check"></i><b>6.10.1</b> Opening the letter</a></li>
+<li class="chapter" data-level="6.10.2" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#rejecting-a-rejection"><i class="fa fa-check"></i><b>6.10.2</b> Rejecting a rejection</a></li>
+<li class="chapter" data-level="6.10.3" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#general-considerations-and-the-editor-perspective"><i class="fa fa-check"></i><b>6.10.3</b> General considerations and the editor perspective</a></li>
+<li class="chapter" data-level="6.10.4" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#the-peer-reviews-and-the-types-of-criticisms-minor-textual-actionable-and-arguable"><i class="fa fa-check"></i><b>6.10.4</b> The peer reviews and the types of criticisms (minor, textual, actionable and arguable)</a></li>
+<li class="chapter" data-level="6.10.5" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#framing-arguments"><i class="fa fa-check"></i><b>6.10.5</b> Framing arguments</a></li>
+<li class="chapter" data-level="6.10.6" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#dealing-with-textual-changes"><i class="fa fa-check"></i><b>6.10.6</b> Dealing with textual changes</a></li>
+<li class="chapter" data-level="6.10.7" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#writing-the-rebuttal-letter"><i class="fa fa-check"></i><b>6.10.7</b> Writing the rebuttal letter</a></li>
+<li class="chapter" data-level="6.10.8" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#substantial-alterations-and-extra-work"><i class="fa fa-check"></i><b>6.10.8</b> Substantial alterations and extra work</a></li>
+<li class="chapter" data-level="6.10.9" data-path="publishing-manuscripts.html"><a href="publishing-manuscripts.html#second-stage-reviews-and-later"><i class="fa fa-check"></i><b>6.10.9</b> Second stage reviews and later</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://surgery.rnsh.org/">The SERT Institute</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Guide to Reproducible Research for Surgeons</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="starting-and-running-a-research-project" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Starting and running a research project</h1>
+<div id="designing-research-projects." class="section level2">
+<h2><span class="header-section-number">2.1</span> Designing research projects.</h2>
+<p>Once an exciting new research project has been envisaged and sketched out, a pause for thought is needed.
+Before any work is undertaken, there are important queries that need to be addressed in order to avoid serious roadblocks to progress, to help ensure the project unfolds in an orderly way, and to make sure that the goals of the study are attainable within the time allotted.</p>
+<ul>
+<li>How much time is available? Is there a hard deadline that cannot be changed?</li>
+<li>What are the questions that underlie the project? Can they be clearly stated?</li>
+<li>What are the ethical issues involved in pursuing the study? Will HREC and governance approval be needed?</li>
+<li>Why do you want to do the project? What is your motivation? Are you keen to do it?</li>
+<li>What resources (money, equipment and salary) will be needed to complete the project, and are they available?</li>
+<li>What skills are required?</li>
+<li>What type of statistical analysis is needed and is there likely to be enough data, i.e., is there sufficient statistical power?</li>
+<li>Who is interested in the study and its outcomes?</li>
+<li>Who is in charge of the study, who makes the key decisions?</li>
+<li>Does it involve data already generated or is will it require generation?</li>
+<li>What sort of publication is envisaged and what journal would it be published in?</li>
+</ul>
+<p>The first five queries relate to the feasibility of the project, so are central to the decision as to whether to proceed at all.
+All need very thorough consultation with a mentor (and an experienced departmental research officer) as the answers to these queries profoundly influence how a study proceeds.
+Some queries may have simple answers, but it always pays to be cautious in accepting that simplicity at face value.
+Digging a bit deeper is nearly always warranted.</p>
+<p>The most deceptively simple query is often number 2 above, relating to the research question(s) that underpin the whole study design.
+It is all too easy to be glib in composing such research questions, so it requires careful deconstruction.
+Can the question be phrased simply and precisely and do other people grasp it easily?
+If not, that is a danger signal that more care in framing the research question is needed.
+Point 8 above is also important if seeking funding support - if the research question is answered, how much would anyone care about it or find it useful?
+It is also an important consideration later on when persuading a begrudging journal editor to publish the work.</p>
+<p>These queries taken as a whole indicate not only the importance of mentorship and planning, but also of canvassing the views of others about a research proposal.
+This can be done by simply asking colleagues for comments on draft proposals, but a traditionally eye-opening approach is to present the research proposal to a group of peers.
+This can be done several ways, but formal presentations to a large audience are good for getting unvarnished advice from a variety of perspectives.
+A presentation deadline is also a useful push to get things organised.
+Small expert audiences are generally better for criticising project detail and for thinking in-depth about the premises of the project.</p>
+</div>
+<div id="framing-a-really-good-research-question." class="section level2">
+<h2><span class="header-section-number">2.2</span> Framing a really good research question.</h2>
+<p>All projects have at their heart a Question that they are designed to answer. Asking the right question is, after all, the first step to solving a problem, but it goes further than that: a good research Question clarifies a project, and helps focus the thinking and planning. Constructing a research Question sounds straightforward but is usually not simple at all and, sadly, proper deliberation of the research Question is often overlooked. This can have important consequences, because if the Question is not clear and well thought through the whole project may be on shaky ground. It should be noted as well that the research Question has to be included in some form in project reports, publications and research ethics applications, so it must be clear and concise.</p>
+<p>Another consideration at the outset is the source of the research Question – did a mentor or supervisor assign it? If so, it should not be taken for granted that it is cogent and well designed, although the chances are that it is. The mentor should discuss it in some depth, and perhaps some experienced colleagues should be consulted about it.</p>
+<div id="a-research-question-needs-precision-but-not-too-much" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> A research Question needs precision (but not too much)</h3>
+<p>It is very useful to be able to state the research question succinctly in a simple sentence. There can be exceptions but if it cannot be formulated in this way then it probably needs more thought. It must sound good and make logical sense. One type of phrase to avoid would be “is important in”, which is too imprecise to help define a goal. Thus “is factor X important in process Y?” is no good. Better is something like “does factor X have a significant impact on procedure Y outcomes under condition Z?” or “among patient group X, does factor Y show a strong correlation with feature Z?”</p>
+</div>
+<div id="a-research-question-should-not-be-too-long" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> A research Question should not be too long</h3>
+<p>As a rough rule, it should not stretch to two full lines of standard typed text in length. However, it may have to be longer if a short preamble is needed to provide context. Or it may involve diseases with very long descriptors. The question can be split into parts and if necessary can refer to other projects, for example. Just be sure it is appropriate and makes sense.</p>
+</div>
+<div id="a-research-question-should-not-be-too-vague-or-overarching" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> A research Question should not be too vague or overarching</h3>
+<p>Research projects need a reasonable timeframe and realistic expectation of resource access. Big, bold, vague concepts have no place. Feasibility is crucial.</p>
+</div>
+<div id="a-research-question-is-usually-quite-different-to-a-seminar-title" class="section level3">
+<h3><span class="header-section-number">2.2.4</span> A research Question is usually quite different to a seminar title</h3>
+<p>Seminar titles tend to be bold and simply phrased to indicate the research area to be discussed even if that is broader than the subject of the seminar. It serves a different function to the research Question.</p>
+</div>
+<div id="a-research-question-should-not-be-too-parochial-or-small" class="section level3">
+<h3><span class="header-section-number">2.2.5</span> A research question should not be too parochial or small</h3>
+<p>Research conclusions by their nature have to extrapolate general or big things from smaller or more restricted things. That said, a research Question that is too obscure is unlikely to interest anyone.</p>
+</div>
+<div id="finding-causes-do-not-to-be-tempted" class="section level3">
+<h3><span class="header-section-number">2.2.6</span> Finding causes – do not to be tempted</h3>
+<p>There are many types of causes, and most diseases (and disease processes) have many causes and risk factors. Do not be tempted to state or imply that you are looking to define the cause of something. If you have a strong idea as to a putative cause, frame the question directly around that idea instead.</p>
+</div>
+<div id="questions-point-to-the-research-aims" class="section level3">
+<h3><span class="header-section-number">2.2.7</span> Questions point to the research aims</h3>
+<p>Note that stating a research Question in the preamble of a report or funding application will naturally flow into a statement of the research aims or objectives. One question may spawn several aims, which is great as long as it all makes sense and the connections are clear.</p>
+</div>
+<div id="and-lastly" class="section level3">
+<h3><span class="header-section-number">2.2.8</span> And lastly</h3>
+<p>Try not to be boring
+If the research Question is answered, will anyone care? It can be a brutal question but it can be a very useful one. Be the one to ask it, not the audience at your final presentation.</p>
+</div>
+</div>
+<div id="writing-a-short-research-proposal" class="section level2">
+<h2><span class="header-section-number">2.3</span> Writing a short research proposal</h2>
+<p>Here, we outline some general pointers to writing a short document for seeking funding or some other type of support.</p>
+<div id="decide-what-the-proposal-is-about-and-distill-it-into-a-short-title" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Decide what the proposal is about and distill it into a short title</h3>
+<p>This is a useful way to refine the central idea in a proposal. It must be clear to you if it stands any hope of being understood by the reviewer or audience, and title brevity and clarity has impact.</p>
+</div>
+<div id="be-mindful-of-who-will-review-it" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Be mindful of who will review it**</h3>
+<p>Any proposal must be tailored to its audience and their interests, but this is easily forgotten. The most difficult type of proposal is that intended for a lay reader. After a long training in a highly professional and technical environment it is extraordinarily difficult to write in lay language without jargon and in easily understood concepts. Practice and feedback from others is usually the only way.</p>
+</div>
+<div id="if-it-is-short-it-must-be-highly-structured" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> If it is short it must be highly structured</h3>
+<p>Do not waste any space with rambling text. Make sure any text is really needed, so upon reviewing it delete any text that does not enhance or further the proposal. Try starting with a set of dot points for each section then turn it into prose. Use references to minimise unnecessary methods detail.</p>
+</div>
+<div id="proposal-overall-structure" class="section level3">
+<h3><span class="header-section-number">2.3.4</span> Proposal overall structure</h3>
+<p>This should generally resemble the following: short preamble, briefly stated aims, introduction or context to the work, methods and approaches, details of proposed work (which may be divided into sections), and outcome significance. The work detail sections should usually include a brief rationale (why you need to do something), the detail (what will be done) and expected outcomes.</p>
+</div>
+<div id="use-diagrams-flow-charts-and-illustrative-images-where-possible" class="section level3">
+<h3><span class="header-section-number">2.3.5</span> Use diagrams, flow charts and illustrative images where possible</h3>
+<p>1 picture = 1,000 words.</p>
+</div>
+<div id="textual-flow" class="section level3">
+<h3><span class="header-section-number">2.3.6</span> Textual flow</h3>
+<p>The language should be clear with linkage between ideas and a good style that leads gracefully and logically from one point to the next. This is a skill garnered over time through reading, writing and critiques. The style and vocabulary typical for the field should be used since otherwise becomes an irritating distraction for the reader/reviewer. Those conventions evolved for a reason.</p>
+</div>
+<div id="writing-a-short-document-is-hard" class="section level3">
+<h3><span class="header-section-number">2.3.7</span> Writing a short document is hard</h3>
+<p>Short documents are always harder than long ones because shortage of space means a document needs to be very carefully structured, which is a surprisingly hard thing to achieve. It involves stripping the document of non-essential detail and ordering concepts to flow easily. Often a good approach is to make a solid attempt (which will be too long), then abandon it for a while, then upon return obvious cuts and unnecessary frippery is evident. If the document size goal is not reached and not yet visible, repeat the cycles of abandonment and return and eventually it will get there.</p>
+</div>
+<div id="if-there-are-project-submission-guidelines-read-them-carefully-and-adhere-to-them." class="section level3">
+<h3><span class="header-section-number">2.3.8</span> If there are project submission guidelines, read them carefully and adhere to them.</h3>
+<p>Usually for short submissions the most important feature is length of the proposal or proposal section fields. Like all the guidelines these should be respected in every detail or its submission may not be accepted.</p>
+</div>
+<div id="the-first-section-or-page-is-the-most-important" class="section level3">
+<h3><span class="header-section-number">2.3.9</span> The first section or page is the most important</h3>
+<p>This is where 90% of the impact is made. Any reviewer will be impressed by an opening that has a short, cogent summary of the subject, especially if it uses flowing English and links important concepts clearly to make a compelling case. Do not use grandiose styles but try to sound interesting and creative where possible, though this is often a hard ask. The ideal is to entertain or at least revive the poor tired reviewer, as their job is very tough and they may have read 50 proposals before yours.</p>
+</div>
+<div id="dont-be-boring" class="section level3">
+<h3><span class="header-section-number">2.3.10</span> Don’t be boring</h3>
+<p>Break up text, make it visually interesting, and use diagrams and pictures where possible. There is nothing worse for a reviewer than pages of dense, poorly written prose. Use bold and italic fonts sparingly. Keep sentences below 3 lines. Use short paragraphs with linked ideas and link paragraphs to keep the flow. If possible, break up text with short, cogent titles that not only help comprehension but look good on the page. Sound precise and slightly fussy in detail (especially method descriptions, if there is the space) without being long-winded.</p>
+</div>
+<div id="dont-be-repetitive" class="section level3">
+<h3><span class="header-section-number">2.3.11</span> Don’t be repetitive</h3>
+<p>If you said it before, why say again? Especially avoid saying it again with the same form of words, which always looks incompetent. There again, the major concepts and important points may have to be restated in different forms in different sections of the proposal, but vary the choice of phrasing.</p>
+</div>
+<div id="get-someone-to-read-your-proposal-critically" class="section level3">
+<h3><span class="header-section-number">2.3.12</span> Get someone to read your proposal critically</h3>
+<p>For all but the most trivial project this is absolutely crucial. You need the objectivity that a disinterested reader can bring and you need constructive criticism even if you are already a good writer. All statements in a proposal need to be examined from a range of perspectives, flow of the arguments and the language both need to be checked.</p>
+</div>
+<div id="do-not-be-precious-about-your-work-when-receiving-criticism." class="section level3">
+<h3><span class="header-section-number">2.3.13</span> Do not be precious about your work when receiving criticism.</h3>
+<p>Take criticism about your writing very seriously and consider it as a gift even if it is a gift you don’t like. What is better – having flaws pointed out by a colleague or by your proposal reviewer? Always remember the point why the proposal is being written – you want the reviewer to give you something significant such as grant funding.</p>
+</div>
+<div id="make-the-expected-outcomesconclusions-look-different-to-the-aims." class="section level3">
+<h3><span class="header-section-number">2.3.14</span> Make the expected outcomes/conclusions look different to the aims.</h3>
+<p>It is so easy to make the outcomes (which should usually be placed at the end of each proposal section) look the same as the aims, which after all is logical. But don’t do it. Try putting outcomes in a wider context and make them more discursive than the Aims. The same problem can occur with aims and conclusions</p>
+</div>
+<div id="does-the-whole-proposal-look-simple" class="section level3">
+<h3><span class="header-section-number">2.3.15</span> Does the whole proposal look simple?</h3>
+<p>Simple good, complicated bad.</p>
+</div>
+</div>
+<div id="reviewing-progress-of-a-research-project" class="section level2">
+<h2><span class="header-section-number">2.4</span> Reviewing progress of a research project</h2>
+<p>After a project has been underway for some time, it is always useful to review progress and assess whether the project is on target or flirting with disaster. Here are some points to consider.</p>
+<p>Project reviews should ideally involve a peer or mentor overview, even if this is informal, to help provide some objectivity. A general assumption can be made that original project timescales were optimistic since obstacles are harder to see at the outset. Periodic reviews will help to identify and assess those obstacles and decide how to deal with them. It is worth investing time in this and reflecting carefully on the review outcomes. Look particularly for blocks to future progress.</p>
+<p>Consider the following points:</p>
+<ul>
+<li>Is the project on time? How constrained is the schedule and how immutable are the deadlines?</li>
+<li>What were the expected outcomes or goals in the proposal? Are they still good goals?</li>
+<li>Were milestones (intermediate goals) set? What were they and when are they due?</li>
+<li>What obstacles have been encountered to specific goals?</li>
+<li>What skills have been gained in this project and were they gained at the expense of time?</li>
+<li>What parts of the project depend on other people, and might that be a problem later?</li>
+<li>Have all envisaged resources actually been available? If not, what effect has that had?</li>
+<li>What ethics applications are outstanding and what are their expected timelines?</li>
+<li>Has there been adequate oversight, support and supervisor feedback?</li>
+</ul>
+<p>In sum:</p>
+<ul>
+<li>Where is the project now relative to where is it supposed to be?</li>
+<li>If progress is insufficient, how can this be corrected? Does it matter?
+Other thoughts:</li>
+<li>How do you make sure that your self-assessment is not deluded?</li>
+<li>Are there other people, such as a supervisor, available to help with assessment?
+The future:</li>
+<li>If something totally unexpected happened to block one particular part of the project, would it block progress as a whole?</li>
+<li>Related to that, how linear is the project? That is, does one section of the project depend entirely on the completion of some other section(s) first? This is often a point of vulnerability.</li>
+<li>If you had to do a presentation now about the project would that scare you?</li>
+<li>Is data collection slow, such that outcomes are impossible to see until late on?</li>
+<li>What data would be easiest to collect now (or soon), and why not get it now?</li>
+<li>What data collection is guaranteed to work well and be informative? What is not?</li>
+<li>How much work and time are you putting into the project? Is it enough? Too much? Are other projects or work schedules interfering in it?</li>
+<li>What would happen if the mentor or supervisor disappeared unexpectedly for a month?</li>
+</ul>
+</div>
+<div id="choosing-a-research-supervisor" class="section level2">
+<h2><span class="header-section-number">2.5</span> Choosing a research supervisor</h2>
+<p>The project supervisor plays a central role in a successful project. This includes mentoring and guide the student, teaching good research practice, making sure that the student makes proper progress, helping resolve issues and guiding the report writing. The supervisor also has to deal with official paperwork and assessments. If that sounds like a lot, it is; he or she has many complex tasks to do for a project to be successfully completed, which is why a good choice of supervisor is so important. Indeed, having a bad supervisor is almost as disastrous as being a bad student. The supervisor’s interests needs to align with the proposed project and the interests of the student but beyond that it is not always clear how to choose a supervisor. Here are some thoughts and general principles that may help in considering potential supervisors.</p>
+<div id="supervisors-for-degree-subjects-undergo-university-accreditation" class="section level3">
+<h3><span class="header-section-number">2.5.1</span> Supervisors for degree subjects undergo University accreditation</h3>
+<p>In the bad old days supervisors just had to be experts in the field, but over the decades Universities and colleges recognised the need for proper oversight and training to avoid commonly recurring problems. Thus, supervisors need appropriate higher degrees and experience, and have to undertake short training courses to become accredited. While this training is not extensive (arguably it doesn’t need to be), supervisors are well aware of standards and demands expected by the system and, more importantly, have been through it themselves as students or trainees.</p>
+</div>
+<div id="supervisors-may-come-in-multiples" class="section level3">
+<h3><span class="header-section-number">2.5.2</span> Supervisors may come in multiples</h3>
+<p>A project may have two or more supervisors, and as long as they work well together this can be a good idea, particularly if one supervisor is often absent. A second, senior supervisor often has to be approved to provide oversight when a more junior supervisor does not have a long track record in supervision, and that is always a good thing if they work together well. If they don’t it isn’t.</p>
+</div>
+<div id="dont-choose-a-very-busy-person-as-a-sole-supervisor" class="section level3">
+<h3><span class="header-section-number">2.5.3</span> Don’t choose a very busy person as a sole supervisor</h3>
+<p>One of the worst supervision problems is having a supervisor who is too occupied with other things to provide input or to read drafts in a timely manner. This can happen due to teaching, administration or surgical work overload. If this is the case it is best to have a second supervisor to help, or failing that have some other mentor who is available and willing to help.</p>
+</div>
+<div id="clarify-how-the-project-deadlines-suit-the-supervisor" class="section level3">
+<h3><span class="header-section-number">2.5.4</span> Clarify how the project deadlines suit the supervisor</h3>
+<p>This is particularly important for time-delimited projects where the supervisor needs to be available prior to key milestone dates. Time-delimited projects, such as Honours projects, revolve around milestones and submission deadlines so this is important. If the supervisor cannot do this well the student must act quickly to get the relevant institutional committee to initiate provisions to help with this. Degrees such as PhDs that end when a benchmark standard (rather than a deadline) is attained are less prone to such problems but even these must be carefully handled to avoid delays.</p>
+</div>
+<div id="be-clear-that-the-supervisor-has-expertise-in-all-the-areas-of-the-project" class="section level3">
+<h3><span class="header-section-number">2.5.5</span> Be clear that the supervisor has expertise in all the areas of the project</h3>
+<p>If not, make sure there is support in the areas outside the supervisor expertise, or an additional supervisor/mentor. This may include getting access to expert statistical support.</p>
+</div>
+<div id="work-on-the-project-aims-and-research-questions-with-the-supervisor" class="section level3">
+<h3><span class="header-section-number">2.5.6</span> Work on the project aims and research questions with the supervisor</h3>
+<p>These need to be very carefully thought through, but can be quite treacherous territory. It must be clear that a supervisor-to-be can do this and takes this task seriously. Make sure the aims are non-trivial, and easy to describe. Ask other (uninvolved) experts what they think about the project aims and project questions.</p>
+</div>
+<div id="make-sure-the-project-is-feasible-and-actively-explore-how-to-ensure-this-with-the-supervisor" class="section level3">
+<h3><span class="header-section-number">2.5.7</span> Make sure the project is feasible, and actively explore how to ensure this with the supervisor</h3>
+<p>Project feasibility is usually difficult for a student to determine without the help of a mentor but is absolutely crucial. At issue is how well the work can be done with the time and resources available. Assessing that requires experience the student may not have. There are many possible issues: are the clinical data already available, with HREC approval? Is the equipment available? Funding? What could cause critical delays? The list is often long, but a good supervisor should easily deal with this.</p>
+</div>
+<div id="make-sure-the-project-has-at-least-some-work-where-results-are-guaranteed-in-the-short-term" class="section level3">
+<h3><span class="header-section-number">2.5.8</span> Make sure the project has at least some work where results are guaranteed in the short term</h3>
+<p>Having some guaranteed early results is a great way to ensure project feasibility and is an important point to ask a prospective supervisor about. Some results should be easy to obtain early on to give breathing space for training. These early results may be from a dull part of the project but it is valuable to have some progress to write about early on. The project should of course contain some more difficult aspects, which are usually the interesting bits.</p>
+</div>
+<div id="if-things-are-not-working-out" class="section level3">
+<h3><span class="header-section-number">2.5.9</span> If things are not working out</h3>
+<p>Either the supervision or the project may not work out well. Either way, once a problem has become evident it is important to try and resolve this with the supervisor(s) themselves. If this cannot give resolution then getting informal advice from other mentors, tutors, colleagues and University research offices is usually the next best step. Beyond that the student needs to take things to the relevant overseeing committee, usually termed a Higher Degrees by Research (HDR) committee at the hosting institution. If the matter is serious it will be necessary to consult the formal codes of the institution to determine the procedures and actions relevant to the situation. It is important to understand that student/trainee problems are taken very seriously there are always support and advice from individuals, committees and administrative processes to provide oversight and flag where there are problems.</p>
+</div>
+</div>
+<div id="human-research-ethics-principles-a-brief-introduction." class="section level2">
+<h2><span class="header-section-number">2.6</span> Human research ethics principles – a brief introduction.</h2>
+<p>Human research ethics is regulated and informed by the NHMRC National Statement on Ethical conduct on Human Research, a well written but long document obtainable at the NHMRC.gov.au website. Before any work involving human participants authorisation is legally required from a local Human Research Ethics Committee (HREC). For the Royal North Shore Hospital campus this is the Northern Sydney Local Health District Research Office in the Kolling Institute (<a href="mailto:NSLHD-Research@health.nsw.gov.au" class="email">NSLHD-Research@health.nsw.gov.au</a>), although for multi-centre studies other HRE committees may be appropriate.</p>
+<p>The formal human ethics application process (which may require an interview) for most HRECs involves submitting an application via an online system*, provision of relevant documentation and signed declarations, and a fee. The application is considered at a meeting of the full committee. Approval is rarely granted without application modifications, though these may be minor. The process is separate to gaining hospital governance approval (a.k.a. Site Specific Assessment), which is also required for research projects. Note SSA applications are reviewed by institution managers rather than by an HREC, but also need time, form filling and payment of a fee.</p>
+<div id="why" class="section level3">
+<h3><span class="header-section-number">2.6.1</span> Why?</h3>
+<p>Human research aims to obtain data that will improve human health or wellbeing. However, the war crimes trials at the end of the Second World War detailed how the pursuit of research could involve serious violations of ethical norms, and demonstrated that strong state regulation was essential to avoid similar horrors. Those norms were initially defined in the ten principles of the Nuremberg Code, but were later detailed in the 1964 Helsinki Declaration of the World Medical Assembly. This defined principles for judging the ethical status of a project, which have since been gradually refined and form the basis of the relevant Australian Commonwealth and State laws.</p>
+</div>
+<div id="human-participation-in-research" class="section level3">
+<h3><span class="header-section-number">2.6.2</span> Human participation in research</h3>
+<p>The range of activities covered by HREC regulations is wide. Observational studies, surveys, interviews, access to patient clinical or personal information (anonymised or not) and collection of human tissues all come under the HREC remit, as well as studies involving medical interventions and tests.</p>
+</div>
+<div id="basic-principles" class="section level3">
+<h3><span class="header-section-number">2.6.3</span> Basic principles</h3>
+<p>The relationship between researchers and research participants (the general term for the subjects of the research) must reflect respect for them as human beings. In addition, the research must possess merit and integrity, and display beneficence (i.e., care for participant welfare), protection from harm and consideration of societal and cultural implications of the research. The central value is that of respect, based in recognition that all human beings have intrinsic worth so cannot be viewed merely as an instrument of the research. It also demands that all individuals be regarded as having equal worth. The principle of respect not only implies that studies be designed to minimise risk of harm or discomfort, but also that where there is no benefit to a participant the risk of harm should be particularly low.</p>
+<p>These principles lead to the very heart of human research ethics – the requirement for consent by any research participant. This consent must be voluntary and properly informed by adequate understanding of the project. This requires engagement from the researcher to ensure consent is properly obtained, signed off and notified. Consent can be withdrawn by a participant at any point and for any reason, or none. Where a participant cannot give consent (e.g., due to cognitive impairment) then an advocate needs to be involved to protect the participant interests. If data is aggregated and anonymised, cannot harm participants (even if the data is misplaced) and individual consent burdensome to obtain from all participants then an application to the HRE committee can be made to waïve the need for consent (see below).</p>
+</div>
+<div id="harm-and-risk-of-harm" class="section level3">
+<h3><span class="header-section-number">2.6.4</span> Harm and risk of harm</h3>
+<p>The notion of harm is a simple one to understand although, for HREC assessment, its nature and severity are important parameters. It is important to note that firmly within the definition of harm (albeit at the low end of the scale) are discomfort, inconvenience and breach of privacy. Discomfort includes minor effects of blood sampling but also medication side effects, taking blood pressure and any anxiety induced by interaction with a medical researcher. Inconvenience refers to the time taken to participate in the research, even if it is a survey. Breach of privacy includes release (accidental or not) of personal information about a participant.</p>
+<p>An important concept is that of risk of harm and it may be just as important to minimise this as to minimise actual harm. A procedure involving only inconvenience is viewed very differently if it involves even a small risk of injury. Thus, risk needs to be assessed as well as harm. A risk is a potential for harm (including discomfort or inconvenience) and involves an assessment of both harm severity and harm exposure. The researcher(s) and the HREC thus need to identify any risks, gauge their probability and severity, assess how much they can be minimised, determining whether potential benefits of the research to justify the risk, and determine how the risk exposure can be managed.</p>
+</div>
+<div id="the-role-of-the-hrec" class="section level3">
+<h3><span class="header-section-number">2.6.5</span> The role of the HREC</h3>
+<p>Aside from fulfilling a formal legal oversight role, an HREC makes judgements on whether risks of a proposed research project are justified by potential benefits, including the participants’ perceptions of those risks and benefits, determine that an indemnity system exists to compensate for any harm suffered and manage conflict of interest among the researchers. An HREC that is appointed under NHMRC guidelines includes an overseeing chairperson, two laypeople (male and female) with no research affiliation, two experienced medical researchers, a lawyer where possible, a person with a community pastoral care role, and a person with experience in medical care or counselling.</p>
+</div>
+<div id="negligible-and-low-risk-projects" class="section level3">
+<h3><span class="header-section-number">2.6.6</span> Negligible and low risk projects</h3>
+<p>Low risk implies a risk only of discomfort, and negligible risk implies no harm more than inconvenience. Many data analysis projects that study aggregated data from past patients would fall under such a category if the data in anonymised. This can be achieved in databases such as REDCap, although there is as yet no legal definition of “anonymised” in Australia. It is possible to apply to an HREC to have a waiver issued for the need to have formal consent from the participants where this is impractical and unnecessary given the low/negligible risk of harm.</p>
+<p><em><span class="math inline">\(\ast\)</span> Note - For many NSW Ethics committee submission (including Kolling Institute/RNSH) is now done via the Research Ethics Governance Information System (REGIS) which is entirely online. For some authorities (e.g., North Shore Private Hospital) this is HRE Application System (HREAS) which includes template forms.</em></p>
+
+</div>
+</div>
+</div>
+<script>
+/*
+Sorts the references alphabetically.
+Modified from code by Yvonne Aburrow.
+*/
+$(function(){
+    var elems = $('#refs').children('div').remove();
+    elems.sort(function (a, b) {
+        return $(b).children('p').html().toUpperCase() > $(a).children('p').html().toUpperCase() ? -1 : 1;
+    });
+    $('#refs').append(elems);
+})
+</script>
+
+Hello
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="statistical-issues-in-research.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/Robinlovelace/geocompr/edit/master/200-Starting-and-running-a-research-project.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
