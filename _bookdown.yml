@@ -1,0 +1,19 @@
+rmd_files: 
+    - "index.Rmd"
+    - "100-Introduction.Rmd"
+    - "200-Starting-and-running-a-research-project.Rmd"
+    - "300-Statistical-issues-in-research.Rmd"
+    - "400-Research-gone-bad.Rmd"
+    - "500-Presentations-at-conferences.Rmd"
+    - "600-Publishing-manuscripts.Rmd"
+new_session: yes
+before_chapter_script: ["code/before_script.R"]
+delete_merged_file: true
+language:
+  label:
+    fig: "FIGURE "
+    tab: "TABLE "
+  ui:
+    edit: "Edit"
+    chapter_name: "Chapter "
+

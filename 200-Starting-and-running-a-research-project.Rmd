@@ -1,0 +1,251 @@
+# Starting and running a research project  
+
+## Designing research projects.
+
+Once an exciting new research project has been envisaged and sketched out, a pause for thought is needed. 
+Before any work is undertaken, there are important queries that need to be addressed in order to avoid serious roadblocks to progress, to help ensure the project unfolds in an orderly way, and to make sure that the goals of the study are attainable within the time allotted.
+
++ How much time is available? Is there a hard deadline that cannot be changed?
++ What are the questions that underlie the project? Can they be clearly stated?
+* What are the ethical issues involved in pursuing the study? Will HREC and governance approval be needed?
+* Why do you want to do the project? What is your motivation? Are you keen to do it?
+* What resources (money, equipment and salary) will be needed to complete the project, and are they available?
+* What skills are required?
+* What type of statistical analysis is needed and is there likely to be enough data, i.e., is there sufficient statistical power?
+* Who is interested in the study and its outcomes?
+* Who is in charge of the study, who makes the key decisions?
+* Does it involve data already generated or is will it require generation?
+* What sort of publication is envisaged and what journal would it be published in?
+
+The first five queries relate to the feasibility of the project, so are central to the decision as to whether to proceed at all. 
+All need very thorough consultation with a mentor (and an experienced departmental research officer) as the answers to these queries profoundly influence how a study proceeds. 
+Some queries may have simple answers, but it always pays to be cautious in accepting that simplicity at face value. 
+Digging a bit deeper is nearly always warranted.
+
+The most deceptively simple query is often number 2 above, relating to the research question(s) that underpin the whole study design. 
+It is all too easy to be glib in composing such research questions, so it requires careful deconstruction. 
+Can the question be phrased simply and precisely and do other people grasp it easily? 
+If not, that is a danger signal that more care in framing the research question is needed. 
+Point 8 above is also important if seeking funding support - if the research question is answered, how much would anyone care about it or find it useful? 
+It is also an important consideration later on when persuading a begrudging journal editor to publish the work.
+
+These queries taken as a whole indicate not only the importance of mentorship and planning, but also of canvassing the views of others about a research proposal. 
+This can be done by simply asking colleagues for comments on draft proposals, but a traditionally eye-opening approach is to present the research proposal to a group of peers. 
+This can be done several ways, but formal presentations to a large audience are good for getting unvarnished advice from a variety of perspectives. 
+A presentation deadline is also a useful push to get things organised. 
+Small expert audiences are generally better for criticising project detail and for thinking in-depth about the premises of the project.
+
+## Framing a really good research question.
+
+All projects have at their heart a Question that they are designed to answer. Asking the right question is, after all, the first step to solving a problem, but it goes further than that: a good research Question clarifies a project, and helps focus the thinking and planning. Constructing a research Question sounds straightforward but is usually not simple at all and, sadly, proper deliberation of the research Question is often overlooked. This can have important consequences, because if the Question is not clear and well thought through the whole project may be on shaky ground. It should be noted as well that the research Question has to be included in some form in project reports, publications and research ethics applications, so it must be clear and concise.
+
+Another consideration at the outset is the source of the research Question – did a mentor or supervisor assign it? If so, it should not be taken for granted that it is cogent and well designed, although the chances are that it is. The mentor should discuss it in some depth, and perhaps some experienced colleagues should be consulted about it. 
+
+### A research Question needs precision (but not too much)
+
+It is very useful to be able to state the research question succinctly in a simple sentence. There can be exceptions but if it cannot be formulated in this way then it probably needs more thought. It must sound good and make logical sense. One type of phrase to avoid would be “is important in”, which is too imprecise to help define a goal. Thus “is factor X important in process Y?” is no good. Better is something like “does factor X have a significant impact on procedure Y outcomes under condition Z?” or “among patient group X, does factor Y show a strong correlation with feature Z?”
+
+### A research Question should not be too long
+
+As a rough rule, it should not stretch to two full lines of standard typed text in length. However, it may have to be longer if a short preamble is needed to provide context. Or it may involve diseases with very long descriptors. The question can be split into parts and if necessary can refer to other projects, for example. Just be sure it is appropriate and makes sense.
+
+### A research Question should not be too vague or overarching
+
+Research projects need a reasonable timeframe and realistic expectation of resource access. Big, bold, vague concepts have no place. Feasibility is crucial.
+
+### A research Question is usually quite different to a seminar title
+
+Seminar titles tend to be bold and simply phrased to indicate the research area to be discussed even if that is broader than the subject of the seminar. It serves a different function to the research Question.
+
+### A research question should not be too parochial or small
+
+Research conclusions by their nature have to extrapolate general or big things from smaller or more restricted things. That said, a research Question that is too obscure is unlikely to interest anyone. 
+
+### Finding causes – do not to be tempted
+
+There are many types of causes, and most diseases (and disease processes) have many causes and risk factors. Do not be tempted to state or imply that you are looking to define the cause of something. If you have a strong idea as to a putative cause, frame the question directly around that idea instead.
+
+### Questions point to the research aims
+
+Note that stating a research Question in the preamble of a report or funding application will naturally flow into a statement of the research aims or objectives. One question may spawn several aims, which is great as long as it all makes sense and the connections are clear.
+
+### And lastly
+
+Try not to be boring
+If the research Question is answered, will anyone care? It can be a brutal question but it can be a very useful one. Be the one to ask it, not the audience at your final presentation.
+
+
+
+## Writing a short research proposal
+Here, we outline some general pointers to writing a short document for seeking funding or some other type of support.
+
+### Decide what the proposal is about and distill it into a short title
+
+This is a useful way to refine the central idea in a proposal. It must be clear to you if it stands any hope of being understood by the reviewer or audience, and title brevity and clarity has impact.
+
+### Be mindful of who will review it**
+
+Any proposal must be tailored to its audience and their interests, but this is easily forgotten. The most difficult type of proposal is that intended for a lay reader. After a long training in a highly professional and technical environment it is extraordinarily difficult to write in lay language without jargon and in easily understood concepts. Practice and feedback from others is usually the only way.
+
+### If it is short it must be highly structured
+
+Do not waste any space with rambling text. Make sure any text is really needed, so upon reviewing it delete any text that does not enhance or further the proposal. Try starting with a set of dot points for each section then turn it into prose. Use references to minimise unnecessary methods detail.
+
+### Proposal overall structure
+
+This should generally resemble the following: short preamble, briefly stated aims, introduction or context to the work, methods and approaches, details of proposed work (which may be divided into sections), and outcome significance. The work detail sections should usually include a brief rationale (why you need to do something), the detail (what will be done) and expected outcomes.
+
+### Use diagrams, flow charts and illustrative images where possible
+
+1 picture = 1,000 words.
+
+### Textual flow
+
+The language should be clear with linkage between ideas and a good style that leads gracefully and logically from one point to the next. This is a skill garnered over time through reading, writing and critiques. The style and vocabulary typical for the field should be used since otherwise becomes an irritating distraction for the reader/reviewer. Those conventions evolved for a reason.
+
+### Writing a short document is hard
+
+Short documents are always harder than long ones because shortage of space means a document needs to be very carefully structured, which is a surprisingly hard thing to achieve. It involves stripping the document of non-essential detail and ordering concepts to flow easily. Often a good approach is to make a solid attempt (which will be too long), then abandon it for a while, then upon return obvious cuts and unnecessary frippery is evident. If the document size goal is not reached and not yet visible, repeat the cycles of abandonment and return and eventually it will get there.
+
+### If there are project submission guidelines, read them carefully and adhere to them.
+
+Usually for short submissions the most important feature is length of the proposal or proposal section fields. Like all the guidelines these should be respected in every detail or its submission may not be accepted.
+
+### The first section or page is the most important
+
+This is where 90% of the impact is made. Any reviewer will be impressed by an opening that has a short, cogent summary of the subject, especially if it uses flowing English and links important concepts clearly to make a compelling case. Do not use grandiose styles but try to sound interesting and creative where possible, though this is often a hard ask. The ideal is to entertain or at least revive the poor tired reviewer, as their job is very tough and they may have read 50 proposals before yours.
+
+### Don’t be boring
+
+Break up text, make it visually interesting, and use diagrams and pictures where possible. There is nothing worse for a reviewer than pages of dense, poorly written prose. Use bold and italic fonts sparingly. Keep sentences below 3 lines. Use short paragraphs with linked ideas and link paragraphs to keep the flow. If possible, break up text with short, cogent titles that not only help comprehension but look good on the page. Sound precise and slightly fussy in detail (especially method descriptions, if there is the space) without being long-winded.
+
+### Don’t be repetitive
+
+If you said it before, why say again? Especially avoid saying it again with the same form of words, which always looks incompetent. There again, the major concepts and important points may have to be restated in different forms in different sections of the proposal, but vary the choice of phrasing.
+
+### Get someone to read your proposal critically
+
+For all but the most trivial project this is absolutely crucial. You need the objectivity that a disinterested reader can bring and you need constructive criticism even if you are already a good writer. All statements in a proposal need to be examined from a range of perspectives, flow of the arguments and the language both need to be checked.
+
+### Do not be precious about your work when receiving criticism.
+
+Take criticism about your writing very seriously and consider it as a gift even if it is a gift you don’t like. What is better – having flaws pointed out by a colleague or by your proposal reviewer? Always remember the point why the proposal is being written – you want the reviewer to give you something significant such as grant funding.
+
+### Make the expected outcomes/conclusions look different to the aims.
+
+It is so easy to make the outcomes (which should usually be placed at the end of each proposal section) look the same as the aims, which after all is logical. But don’t do it. Try putting outcomes in a wider context and make them more discursive than the Aims. The same problem can occur with aims and conclusions
+
+### Does the whole proposal look simple?
+
+Simple good, complicated bad.
+
+
+## Reviewing progress of a research project
+After a project has been underway for some time, it is always useful to review progress and assess whether the project is on target or flirting with disaster. Here are some points to consider.
+
+Project reviews should ideally involve a peer or mentor overview, even if this is informal, to help provide some objectivity. A general assumption can be made that original project timescales were optimistic since obstacles are harder to see at the outset. Periodic reviews will help to identify and assess those obstacles and decide how to deal with them. It is worth investing time in this and reflecting carefully on the review outcomes. Look particularly for blocks to future progress. 
+
+Consider the following points:
+
+*	Is the project on time? How constrained is the schedule and how immutable are the deadlines?
+*	What were the expected outcomes or goals in the proposal? Are they still good goals?
+*	Were milestones (intermediate goals) set? What were they and when are they due?
+*	What obstacles have been encountered to specific goals?
+*	What skills have been gained in this project and were they gained at the expense of time?
+*	What parts of the project depend on other people, and might that be a problem later?
+*	Have all envisaged resources actually been available? If not, what effect has that had?
+*	What ethics applications are outstanding and what are their expected timelines?
+*	Has there been adequate oversight, support and supervisor feedback?
+
+In sum:
+
+*	Where is the project now relative to where is it supposed to be?
+*	If progress is insufficient, how can this be corrected? Does it matter?
+Other thoughts:
+*	How do you make sure that your self-assessment is not deluded?
+*	Are there other people, such as a supervisor, available to help with assessment?
+The future:
+*	If something totally unexpected happened to block one particular part of the project, would it block progress as a whole?
+*	Related to that, how linear is the project? That is, does one section of the project depend entirely on the completion of some other section(s) first? This is often a point of vulnerability.
+*	If you had to do a presentation now about the project would that scare you?
+*	Is data collection slow, such that outcomes are impossible to see until late on?
+*	What data would be easiest to collect now (or soon), and why not get it now?
+*	What data collection is guaranteed to work well and be informative? What is not?
+*	How much work and time are you putting into the project? Is it enough? Too much? Are other projects or work schedules interfering in it?
+*	What would happen if the mentor or supervisor disappeared unexpectedly for a month?
+
+
+## Choosing a research supervisor
+
+The project supervisor plays a central role in a successful project. This includes mentoring and guide the student, teaching good research practice, making sure that the student makes proper progress, helping resolve issues and guiding the report writing. The supervisor also has to deal with official paperwork and assessments. If that sounds like a lot, it is; he or she has many complex tasks to do for a project to be successfully completed, which is why a good choice of supervisor is so important. Indeed, having a bad supervisor is almost as disastrous as being a bad student. The supervisor’s interests needs to align with the proposed project and the interests of the student but beyond that it is not always clear how to choose a supervisor. Here are some thoughts and general principles that may help in considering potential supervisors.
+
+### Supervisors for degree subjects undergo University accreditation
+
+In the bad old days supervisors just had to be experts in the field, but over the decades Universities and colleges recognised the need for proper oversight and training to avoid commonly recurring problems. Thus, supervisors need appropriate higher degrees and experience, and have to undertake short training courses to become accredited. While this training is not extensive (arguably it doesn’t need to be), supervisors are well aware of standards and demands expected by the system and, more importantly, have been through it themselves as students or trainees.
+
+### Supervisors may come in multiples
+
+A project may have two or more supervisors, and as long as they work well together this can be a good idea, particularly if one supervisor is often absent. A second, senior supervisor often has to be approved to provide oversight when a more junior supervisor does not have a long track record in supervision, and that is always a good thing if they work together well. If they don’t it isn’t.
+
+### Don’t choose a very busy person as a sole supervisor
+
+One of the worst supervision problems is having a supervisor who is too occupied with other things to provide input or to read drafts in a timely manner. This can happen due to teaching, administration or surgical work overload. If this is the case it is best to have a second supervisor to help, or failing that have some other mentor who is available and willing to help.
+
+### Clarify how the project deadlines suit the supervisor
+
+This is particularly important for time-delimited projects where the supervisor needs to be available prior to key milestone dates. Time-delimited projects, such as Honours projects, revolve around milestones and submission deadlines so this is important. If the supervisor cannot do this well the student must act quickly to get the relevant institutional committee to initiate provisions to help with this. Degrees such as PhDs that end when a benchmark standard (rather than a deadline) is attained are less prone to such problems but even these must be carefully handled to avoid delays.
+
+### Be clear that the supervisor has expertise in all the areas of the project
+
+If not, make sure there is support in the areas outside the supervisor expertise, or an additional supervisor/mentor. This may include getting access to expert statistical support.
+
+### Work on the project aims and research questions with the supervisor
+
+These need to be very carefully thought through, but can be quite treacherous territory. It must be clear that a supervisor-to-be can do this and takes this task seriously. Make sure the aims are non-trivial, and easy to describe. Ask other (uninvolved) experts what they think about the project aims and project questions.
+
+### Make sure the project is feasible, and actively explore how to ensure this with the supervisor
+
+Project feasibility is usually difficult for a student to determine without the help of a mentor but is absolutely crucial. At issue is how well the work can be done with the time and resources available. Assessing that requires experience the student may not have. There are many possible issues: are the clinical data already available, with HREC approval? Is the equipment available? Funding? What could cause critical delays? The list is often long, but a good supervisor should easily deal with this.
+
+### Make sure the project has at least some work where results are guaranteed in the short term
+
+Having some guaranteed early results is a great way to ensure project feasibility and is an important point to ask a prospective supervisor about. Some results should be easy to obtain early on to give breathing space for training. These early results may be from a dull part of the project but it is valuable to have some progress to write about early on. The project should of course contain some more difficult aspects, which are usually the interesting bits.
+
+### If things are not working out
+
+Either the supervision or the project may not work out well. Either way, once a problem has become evident it is important to try and resolve this with the supervisor(s) themselves. If this cannot give resolution then getting informal advice from other mentors, tutors, colleagues and University research offices is usually the next best step. Beyond that the student needs to take things to the relevant overseeing committee, usually termed a Higher Degrees by Research (HDR) committee at the hosting institution. If the matter is serious it will be necessary to consult the formal codes of the institution to determine the procedures and actions relevant to the situation. It is important to understand that student/trainee problems are taken very seriously there are always support and advice from individuals, committees and administrative processes to provide oversight and flag where there are problems.
+
+## Human research ethics principles – a brief introduction.  
+Human research ethics is regulated and informed by the NHMRC National Statement on Ethical conduct on Human Research, a well written but long document obtainable at the NHMRC.gov.au website. Before any work involving human participants authorisation is legally required from a local Human Research Ethics Committee (HREC). For the Royal North Shore Hospital campus this is the Northern Sydney Local Health District Research Office in the Kolling Institute (NSLHD-Research@health.nsw.gov.au), although for multi-centre studies other HRE committees may be appropriate. 
+
+The formal human ethics application process (which may require an interview) for most HRECs involves submitting an application via an online system*, provision of relevant documentation and signed declarations, and a fee. The application is considered at a meeting of the full committee. Approval is rarely granted without application modifications, though these may be minor. The process is separate to gaining hospital governance approval (a.k.a. Site Specific Assessment), which is also required for research projects. Note SSA applications are reviewed by institution managers rather than by an HREC, but also need time, form filling and payment of a fee.
+
+### Why?
+
+Human research aims to obtain data that will improve human health or wellbeing. However, the war crimes trials at the end of the Second World War detailed how the pursuit of research could involve serious violations of ethical norms, and demonstrated that strong state regulation was essential to avoid similar horrors. Those norms were initially defined in the ten principles of the Nuremberg Code, but were later detailed in the 1964 Helsinki Declaration of the World Medical Assembly. This defined principles for judging the ethical status of a project, which have since been gradually refined and form the basis of the relevant Australian Commonwealth and State laws.
+
+### Human participation in research
+
+The range of activities covered by HREC regulations is wide. Observational studies, surveys, interviews, access to patient clinical or personal information (anonymised or not) and collection of human tissues all come under the HREC remit, as well as studies involving medical interventions and tests. 
+
+### Basic principles
+
+The relationship between researchers and research participants (the general term for the subjects of the research) must reflect respect for them as human beings. In addition, the research must possess merit and integrity, and display beneficence (i.e., care for participant welfare), protection from harm and consideration of societal and cultural implications of the research. The central value is that of respect, based in recognition that all human beings have intrinsic worth so cannot be viewed merely as an instrument of the research. It also demands that all individuals be regarded as having equal worth. The principle of respect not only implies that studies be designed to minimise risk of harm or discomfort, but also that where there is no benefit to a participant the risk of harm should be particularly low. 
+
+These principles lead to the very heart of human research ethics – the requirement for consent by any research participant. This consent must be voluntary and properly informed by adequate understanding of the project. This requires engagement from the researcher to ensure consent is properly obtained, signed off and notified. Consent can be withdrawn by a participant at any point and for any reason, or none. Where a participant cannot give consent (e.g., due to cognitive impairment) then an advocate needs to be involved to protect the participant interests. If data is aggregated and anonymised, cannot harm participants (even if the data is misplaced) and individual consent burdensome to obtain from all participants then an application to the HRE committee can be made to waïve the need for consent (see below).  
+
+### Harm and risk of harm
+
+The notion of harm is a simple one to understand although, for HREC assessment, its nature and severity are important parameters. It is important to note that firmly within the definition of harm (albeit at the low end of the scale) are discomfort, inconvenience and breach of privacy. Discomfort includes minor effects of blood sampling but also medication side effects, taking blood pressure and any anxiety induced by interaction with a medical researcher. Inconvenience refers to the time taken to participate in the research, even if it is a survey. Breach of privacy includes release (accidental or not) of personal information about a participant.
+
+An important concept is that of risk of harm and it may be just as important to minimise this as to minimise actual harm. A procedure involving only inconvenience is viewed very differently if it involves even a small risk of injury. Thus, risk needs to be assessed as well as harm. A risk is a potential for harm (including discomfort or inconvenience) and involves an assessment of both harm severity and harm exposure. The researcher(s) and the HREC thus need to identify any risks, gauge their probability and severity, assess how much they can be minimised, determining whether potential benefits of the research to justify the risk, and determine how the risk exposure can be managed.
+
+### The role of the HREC
+
+Aside from fulfilling a formal legal oversight role, an HREC makes judgements on whether risks of a proposed research project are justified by potential benefits, including the participants’ perceptions of those risks and benefits, determine that an indemnity system exists to compensate for any harm suffered and manage conflict of interest among the researchers. An HREC that is appointed under NHMRC guidelines includes an overseeing chairperson, two laypeople (male and female) with no research affiliation, two experienced medical researchers, a lawyer where possible, a person with a community pastoral care role, and a person with experience in medical care or counselling.
+
+### Negligible and low risk projects
+
+Low risk implies a risk only of discomfort, and negligible risk implies no harm more than inconvenience. Many data analysis projects that study aggregated data from past patients would fall under such a category if the data in anonymised. This can be achieved in databases such as REDCap, although there is as yet no legal definition of “anonymised” in Australia. It is possible to apply to an HREC to have a waiver issued for the need to have formal consent from the participants where this is impractical and unnecessary given the low/negligible risk of harm. 
+
+*$\ast$ Note - For many NSW Ethics committee submission (including Kolling Institute/RNSH) is now done via the Research Ethics Governance Information System (REGIS) which is entirely online. For some authorities (e.g., North Shore Private Hospital) this is HRE Application System (HREAS) which includes template forms.*
