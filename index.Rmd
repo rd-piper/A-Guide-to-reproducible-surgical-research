@@ -29,7 +29,7 @@ is_html = knitr::is_html_output()
 ```{asis index-2, echo=is_html}
 # Welcome {-}
 
-This is the online home of *A Guide to Reproducible Surgical Research *.
+This is the online home of *A Guide to Reproducible Surgical Research*.
 
 <a href=""><img src="images/cover.png" width="250" height="375" alt="The geocompr book cover" align="right" style="margin: 0 1em 0 1em" /></a>
 
