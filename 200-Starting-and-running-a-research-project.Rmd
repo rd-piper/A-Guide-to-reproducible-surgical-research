@@ -19,7 +19,7 @@ Before any work is undertaken, there are important queries that need to be addre
 
 The first five queries relate to the feasibility of the project, so are central to the decision as to whether to proceed at all. 
 All need very thorough consultation with a mentor (and an experienced departmental research officer) as the answers to these queries profoundly influence how a study proceeds. 
-Some queries may have simple answers, but it always pays to be cautious in accepting that simplicity at face value. 
+Some queries may hhave simple answers, but it always pays to be cautious in accepting that simplicity at face value. 
 Digging a bit deeper is nearly always warranted.
 
 The most deceptively simple query is often number 2 above, relating to the research question(s) that underpin the whole study design. 
