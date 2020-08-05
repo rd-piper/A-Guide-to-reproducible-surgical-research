@@ -1,9 +1,11 @@
 # Statistical issues in research
 
+[See Audiofile Link](https://surgery.rnsh.org/research-guide/_audio/3.oga)
+
 ## Statistical analysis of data – a random sample of thoughts  
 Statistical analysis is an enormous subject which cannot be seriously addressed in a short article, but below are some brief points to consider when designing, executing and analysing a study. 
 
-### Statistical thinking needs to be done before the study begins
+### Statistical thinking needs to be done before the study begins {-}
 Researchers often think of data as needing statistical analysis after it has been collected, but statistical modelling should be used from the earliest stages in the design of the study. That is, the study should be designed at the outset to give the best chance of generating informative data. Usually in medical projects the most important consideration is statistical power, summarised below.
 
 ### What is your level of statistical training? {-}
