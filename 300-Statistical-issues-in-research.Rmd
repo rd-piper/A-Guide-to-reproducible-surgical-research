@@ -5,7 +5,7 @@
 ## Statistical analysis of data – a random sample of thoughts  
 Statistical analysis is an enormous subject which cannot be seriously addressed in a short article, but below are some brief points to consider when designing, executing and analysing a study. 
 
-```{r cars-plot, fig.cap="The cars data.", echo=FALSE}
+```{r cars-plot, fig.cap="The Caxton Celebration", echo=FALSE}
 knitr::include_graphics(rep('images/The_Caxton_Celebration.jpg', 1))
 ```
 
