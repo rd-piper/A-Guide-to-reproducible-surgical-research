@@ -2,3 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+_book/
+_bookdown_files/
+.DS_Store
+_main.rds
+.vscode
+_main.log
